@@ -29,7 +29,8 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -95,6 +96,7 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -118,7 +120,9 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
     - _ripple_density: 7
     - _ripple_slimness: 5
     - _ripple_speed: 0.2
