@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mc_me\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mc_me\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Context II.1471580793.00" t="ExcludeRecursive" />
+    <e p="D:\HKU\Jaar 2.5\Blok 3\Context II\Unity project\context-ii\Context II" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="FarlandSkies" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Materials" t="Include" />
+            <e p="Models" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Player" t="Include">
+                <e p="FPSWalkerEnhanced.cs" t="Include" />
+                <e p="SmoothMouseLook.cs" t="Include" />
+              </e>
+              <e p="Skybox" t="Include">
+                <e p="SkyboxChanger.cs" t="Include" />
+                <e p="SkyboxRotator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Textures" t="Include" />
+          </e>
+          <e p="Skyboxes" t="Include">
+            <e p="CloudyCrown_01_Midday" t="Include">
+              <e p="Textures" t="Include" />
+            </e>
+            <e p="CloudyCrown_02_Evening" t="Include">
+              <e p="Textures" t="Include" />
+            </e>
+            <e p="CloudyCrown_03_Midnight" t="Include">
+              <e p="Textures" t="Include" />
+            </e>
+            <e p="CloudyCrown_04_Sunset" t="Include">
+              <e p="Textures" t="Include" />
+            </e>
+            <e p="CloudyCrown_05_Daybreak" t="Include">
+              <e p="Textures" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Boat.cs" t="Include" />
+          <e p="Card.cs" t="Include" />
+          <e p="CardData.cs" t="Include" />
+          <e p="Tourist.cs" t="Include" />
+          <e p="TouristStoryManager.cs" t="Include" />
+        </e>
+        <e p="Settings" t="Include" />
+        <e p="temp_art" t="Include">
+          <e p="temp_3d_assets" t="Include" />
+          <e p="temp_materials" t="Include" />
+          <e p="temp_prefabs" t="Include" />
+          <e p="temp_textures" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Icons" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Context II.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
