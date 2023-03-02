@@ -9,6 +9,9 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Animations" t="Include">
+          <e p="UI" t="Include" />
+        </e>
         <e p="FarlandSkies" t="Include">
           <e p="Demo" t="Include">
             <e p="Materials" t="Include" />
@@ -42,6 +45,10 @@
               <e p="Textures" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="lili_art" t="Include">
+          <e p="3D_assets" t="Include" />
+          <e p="3d_prefabs" t="Include" />
         </e>
         <e p="Plugins" t="Include">
           <e p="Dialog" t="Include">
@@ -1665,9 +1672,14 @@
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
-            <e p="Boat.cs" t="Include" />
-            <e p="Pier.cs" t="Include" />
-            <e p="Seat.cs" t="Include" />
+            <e p="Boat" t="Include">
+              <e p="Boat.cs" t="Include" />
+              <e p="Local.cs" t="Include" />
+              <e p="Pier.cs" t="Include" />
+              <e p="Seat.cs" t="Include" />
+              <e p="StoppingPoint.cs" t="Include" />
+              <e p="StoryTrigger.cs" t="Include" />
+            </e>
             <e p="Story.cs" t="Include" />
             <e p="Tourist.cs" t="Include" />
             <e p="TouristCrowd.cs" t="Include" />
@@ -1680,11 +1692,15 @@
             <e p="Card.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
             <e p="CardDatabase.cs" t="Include" />
+            <e p="CardSuitIcon.cs" t="Include" />
+            <e p="LocalTipHUD.cs" t="Include" />
+            <e p="NewCardUI.cs" t="Include" />
             <e p="ScorePopups" t="Include">
               <e p="ScorePopupCanvas.cs" t="Include" />
               <e p="ScorePopupSpawner.cs" t="Include" />
             </e>
             <e p="StoryPromptUI.cs" t="Include" />
+            <e p="TipCounter.cs" t="Include" />
           </e>
         </e>
         <e p="Settings" t="Include" />
@@ -1693,6 +1709,7 @@
           <e p="temp_materials" t="Include" />
           <e p="temp_prefabs" t="Include" />
           <e p="temp_textures" t="Include" />
+          <e p="temp_watershader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />
@@ -1738,6 +1755,11 @@
             </e>
             <e p="Readme.cs" t="Include" />
           </e>
+        </e>
+        <e p="zubi_art" t="Include">
+          <e p="3D_assets" t="Include" />
+          <e p="3d_prefabs" t="Include" />
+          <e p="wind_shader" t="Include" />
         </e>
       </e>
       <e p="Context II.sln" t="IncludeFlat" />

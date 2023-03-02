@@ -10,9 +10,9 @@ public class Card : MonoBehaviour, IPointerClickHandler
 {
     [Header("References")]
     public Sprite heartIcon;
-    public Sprite brainIcon;
+    public Sprite bulbIcon;
     public Sprite fistIcon;
-    public Sprite thunderIcon;
+    public Sprite cloudIcon;
     public Sprite placeholderIcon;
     
     [Header("Components")]
@@ -44,7 +44,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
             }
             else if (suitValues.y > 0)
             {
-                suitIcons[i].sprite = brainIcon;
+                suitIcons[i].sprite = bulbIcon;
                 suitValues.y--;
             }
             else if (suitValues.z > 0)
@@ -54,7 +54,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
             }
             else if (suitValues.w > 0)
             {
-                suitIcons[i].sprite = thunderIcon;
+                suitIcons[i].sprite = cloudIcon;
                 suitValues.w--;
             }
             else

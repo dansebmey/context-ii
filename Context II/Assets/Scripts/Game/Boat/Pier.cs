@@ -5,13 +5,14 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Pier : MonoBehaviour
+public class Pier : StoppingPoint
 {
     private List<Tourist> embarkingTourists;
     public Transform disembarkedCrowdCentre;
 
-    private void Awake()
+    protected override void Start()
     {
+        base.Start();
         embarkingTourists = GetComponentsInChildren<Tourist>().ToList();
     }
 
@@ -24,5 +25,11 @@ public class Pier : MonoBehaviour
     public List<Tourist> GetEmbarkingTourists()
     {
         return embarkingTourists;
+    }
+
+    public override void OnBoatArrived(Boat boat)
+    {
+        boat.OnPierReached(this);
+        boat.StartSpeedingUp(this);
     }
 }

@@ -12,6 +12,7 @@ public class Boat : MonoBehaviour
     private State state = State.Moving;
 
     public float travelSpeed = 0.1f;
+    private float initTravelSpeed;
     
     private List<Tourist> touristsOnBoard;
     private List<Seat> touristSeats;
@@ -25,6 +26,7 @@ public class Boat : MonoBehaviour
     private void Start()
     {
         touristsOnBoard = new List<Tourist>();
+        initTravelSpeed = travelSpeed;
     }
 
     private void Update()
@@ -63,16 +65,7 @@ public class Boat : MonoBehaviour
         transform.position += new Vector3(0, 0, travelSpeed);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Pier pier = other.GetComponent<Pier>();
-        if (pier)
-        {
-            OnPierReached(pier);
-        }
-    }
-
-    private void OnPierReached(Pier pier)
+    public void OnPierReached(Pier pier)
     {
         if (!passedPiers.Contains(pier))
         {
@@ -91,17 +84,11 @@ public class Boat : MonoBehaviour
         switch (s)
         {
             case State.Moving:
-                Invoke(nameof(TriggerStoryEvent), 10);
                 break;
             case State.Stopped:
                 Invoke(nameof(StartMoving), 5);
                 break;
         }
-    }
-
-    private void TriggerStoryEvent()
-    {
-        EventManager.Invoke(EventType.TriggerStoryPrompt);
     }
 
     private void StartMoving()
@@ -147,11 +134,47 @@ public class Boat : MonoBehaviour
             total += tourist.GetTipFromCheckout();
         }
         
+        // temp
+        FindObjectOfType<TipCounter>().AddToCounter(total);
+            
         return total;
     }
 
     public void CheckOutTourists()
     {
         touristsOnBoard.Clear();
+    }
+
+    public void StartSlowingDown(StoppingPoint stoppingPoint)
+    {
+        StartCoroutine(SlowDown(stoppingPoint));
+    }
+
+    private IEnumerator SlowDown(StoppingPoint stoppingPoint)
+    {
+        while (travelSpeed > 0)
+        {
+            travelSpeed -= initTravelSpeed * 0.01f;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        travelSpeed = 0;
+        stoppingPoint.OnBoatArrived(this);
+    }
+
+    public void StartSpeedingUp(StoppingPoint stoppingPoint)
+    {
+        StartCoroutine(SpeedUp(stoppingPoint));
+    }
+
+    private IEnumerator SpeedUp(StoppingPoint stoppingPoint)
+    {
+        while (travelSpeed < initTravelSpeed)
+        {
+            travelSpeed += initTravelSpeed * 0.01f;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        travelSpeed = initTravelSpeed;
     }
 }

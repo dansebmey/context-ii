@@ -27,11 +27,17 @@ public class Tourist : MonoBehaviour
     private int currentTipValue;
     private int tipMultiplier = 1;
     private int lastTipBonus;
+    private LocalTipHUD localTipHUD;
+
+    private void Awake()
+    {
+        localTipHUD = GetComponentInChildren<LocalTipHUD>();
+    }
 
     private void Start()
     {
         // initialTipValue = Random.Range(3, 5);
-        initialTipValue = 5;
+        initialTipValue = 2;
         currentTipValue = initialTipValue;
 
         suitAffinities.x = heartLevel;
@@ -61,6 +67,7 @@ public class Tourist : MonoBehaviour
         }
         
         lastTipBonus = tipBonus;
+        localTipHUD.AddToFavour(tipBonus);
     }
 
     public int GetTipFromCheckout()

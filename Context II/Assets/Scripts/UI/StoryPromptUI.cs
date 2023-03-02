@@ -6,7 +6,7 @@ using UnityEngine;
 public class StoryPromptUI : MonoBehaviour
 {
     private TouristStoryManager tsManager;
-    private Canvas canvas;
+    public Transform subCanvas;
     
     public Card leftCardUI;
     public Card middleCardUI;
@@ -15,7 +15,6 @@ public class StoryPromptUI : MonoBehaviour
     private void Awake()
     {
         tsManager = FindObjectOfType<TouristStoryManager>();
-        canvas = GetComponentInChildren<Canvas>();
         
         EventManager.AddListener(EventType.TriggerStoryPrompt, ShowPrompt);
         EventManager<CardData>.AddListener(EventType.OnCardPlayed, HidePrompt);
@@ -23,12 +22,14 @@ public class StoryPromptUI : MonoBehaviour
 
     private void Start()
     {
-        canvas.gameObject.SetActive(false);
+        subCanvas.gameObject.SetActive(false);
     }
 
     private void ShowPrompt()
     {
-        canvas.gameObject.SetActive(true);
+        if (subCanvas.gameObject.activeSelf) return;
+        
+        subCanvas.gameObject.SetActive(true);
         
         List<CardData> drawnCards = tsManager.DrawCards(3);
         leftCardUI.AssignCardData(drawnCards[0]);
@@ -38,7 +39,7 @@ public class StoryPromptUI : MonoBehaviour
 
     private void HidePrompt(CardData _)
     {
-        gameObject.SetActive(false);
+        subCanvas.gameObject.SetActive(false);
     }
     
     private void OnDestroy()
