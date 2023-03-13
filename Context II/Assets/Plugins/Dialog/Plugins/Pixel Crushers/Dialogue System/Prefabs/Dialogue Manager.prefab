@@ -83,9 +83,9 @@ MonoBehaviour:
     subtitleSettings:
       showNPCSubtitlesDuringLine: 1
       showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 0
+      showPCSubtitlesDuringLine: 1
       allowPCSubtitleReminders: 0
-      skipPCSubtitleAfterResponseMenu: 1
+      skipPCSubtitleAfterResponseMenu: 0
       subtitleCharsPerSecond: 30
       minSubtitleSeconds: 2
       continueButton: 0
