@@ -48,7 +48,18 @@
         </e>
         <e p="lili_art" t="Include">
           <e p="3D_assets" t="Include" />
-          <e p="3d_prefabs" t="Include" />
+          <e p="3d_prefabs" t="Include">
+            <e p="blockout" t="Include">
+              <e p="test" t="Include" />
+            </e>
+          </e>
+          <e p="Materials" t="Include" />
+          <e p="Textures" t="Include">
+            <e p="appartments" t="Include" />
+            <e p="dutch_houses" t="Include" />
+            <e p="farm_houses" t="Include" />
+          </e>
+          <e p="watershader" t="Include" />
         </e>
         <e p="Plugins" t="Include">
           <e p="Dialog" t="Include">
@@ -1674,12 +1685,15 @@
           <e p="Game" t="Include">
             <e p="Boat" t="Include">
               <e p="Boat.cs" t="Include" />
+              <e p="CameraTrigger.cs" t="Include" />
               <e p="Local.cs" t="Include" />
               <e p="Pier.cs" t="Include" />
               <e p="Seat.cs" t="Include" />
               <e p="StoppingPoint.cs" t="Include" />
               <e p="StoryTrigger.cs" t="Include" />
             </e>
+            <e p="CameraController.cs" t="Include" />
+            <e p="CinemaBarOverlay.cs" t="Include" />
             <e p="Story.cs" t="Include" />
             <e p="Tourist.cs" t="Include" />
             <e p="TouristCrowd.cs" t="Include" />

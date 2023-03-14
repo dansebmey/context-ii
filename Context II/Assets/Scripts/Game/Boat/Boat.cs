@@ -13,13 +13,17 @@ public class Boat : MonoBehaviour
 
     public float travelSpeed = 0.1f;
     private float initTravelSpeed;
+
+    // Components
+    private CameraController camCtrl;
+    private List<Seat> touristSeats;
     
     private List<Tourist> touristsOnBoard;
-    private List<Seat> touristSeats;
     private readonly List<Pier> passedPiers = new List<Pier>();
     
     private void Awake()
     {
+        camCtrl = GetComponentInChildren<CameraController>();
         touristSeats = GetComponentsInChildren<Seat>().ToList();
     }
 
@@ -176,5 +180,10 @@ public class Boat : MonoBehaviour
         }
 
         travelSpeed = initTravelSpeed;
+    }
+
+    public CameraController GetCameraController()
+    {
+        return camCtrl;
     }
 }

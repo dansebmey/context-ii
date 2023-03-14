@@ -7,7 +7,8 @@ public enum EventType
     OnPierReached,
     TriggerStoryPrompt,
     OnCardPlayed,
-    OnBoatStopped
+    OnBoatStopped,
+    ChangeCameraPerspective
 }
 
 public static class EventManager

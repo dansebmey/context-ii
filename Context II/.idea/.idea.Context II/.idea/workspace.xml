@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers/Triggers/DialogueSystemTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Boat/Pier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Boat/StoryTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CinemaBarOverlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Wrappers/Save System/DialogueSystemSaver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/MVC/Model/Logic/Shared/Subtitle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StoryPromptUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/TouristStoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/MVC/Model/Logic/Model/ConversationModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Tourist.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/MVC/Model/Data/Chat Mapper/ChatMapperToDialogueDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Wrappers/UI/Standard/Dialogue/SMS/SMSDialogueUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CardData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CardSuitIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Standard/Dialogue/SMS/SMSDialogueUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Scripts/Demo Scripts/DemoMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Boat/CameraTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameObjects/TouristStoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScorePopups/ScorePopupSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/EventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/Pier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/StoppingPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CardData.cs" />
@@ -63,12 +65,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/NewCardUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/StoryTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StoryPromptUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/Boat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LocalTipHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Tourist.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TipCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/TouristStoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Dialog/Plugins/Pixel Crushers/Dialogue System/Wrappers/UI/Standard/Dialogue/SMS/SMSDialogueUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Meta/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/Boat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/CameraTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CinemaBarOverlay.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +118,7 @@
       <workItem from="1677673645193" duration="9004000" />
       <workItem from="1677753120916" duration="3424000" />
       <workItem from="1678363760502" duration="3160000" />
+      <workItem from="1678789542901" duration="6131000" />
     </task>
     <servers />
   </component>
