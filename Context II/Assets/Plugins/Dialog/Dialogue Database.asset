@@ -1153,7 +1153,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 64.327255
-        y: 521.3531
+        y: 520.0873
         width: 160
         height: 30
     - id: 17
@@ -1446,11 +1446,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 3
         type: 5
@@ -1462,16 +1462,16 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Ik slaap een stuk minder rustig sinds ze aan die vervloekte windmolen
           bezig zijn.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 1
       isRoot: 0
       isGroup: 0

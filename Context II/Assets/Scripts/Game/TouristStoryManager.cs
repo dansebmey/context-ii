@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class TouristStoryManager : MonoBehaviour
@@ -13,11 +15,16 @@ public class TouristStoryManager : MonoBehaviour
     public NewCardUI newCardUI;
     private CardData cachedCardData;
 
+    private EmotionSpritePopup emotionSpritePopup;
+    public Transform reactionImagesParent;
+
     private void Awake()
     {
+        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        
         EventManager<CardData>.AddListener(EventType.OnCardPlayed, PlayCard);
     }
-
+    
     private void Start()
     {
         AddStoryToDeck(new CardData("Iets over vogeltjes", +1, 0, 0, 0));
@@ -60,7 +67,7 @@ public class TouristStoryManager : MonoBehaviour
         return drawnCards;
     }
 
-    public void AddStoryToDeck(CardData cardData)
+    private void AddStoryToDeck(CardData cardData)
     {
         deck.Add(cardData);
     }
@@ -74,29 +81,55 @@ public class TouristStoryManager : MonoBehaviour
     public void AddHeartsToCard(int amount)
     {
         cachedCardData.AddSuits(amount, 0, 0, 0);
-        newCardUI.AddHeartSuit();
+        Sprite sprite = newCardUI.AddHeartSuit();
+        
+        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup.Show(sprite);
+        StartCoroutine(SetDialogReactionImage(sprite));
     }
 
     public void AddBulbsToCard(int amount)
     {
         cachedCardData.AddSuits(0, amount, 0, 0);
-        newCardUI.AddBulbSuit();
+        Sprite sprite = newCardUI.AddBulbSuit();
+        
+        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup.Show(sprite);
+        StartCoroutine(SetDialogReactionImage(sprite));
     }
 
     public void AddFistsToCard(int amount)
     {
         cachedCardData.AddSuits(0, 0, amount, 0);
-        newCardUI.AddFistSuit();
+        Sprite sprite = newCardUI.AddFistSuit();
+        
+        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup.Show(sprite);
+        StartCoroutine(SetDialogReactionImage(sprite));
     }
 
     public void AddCloudsToCard(int amount)
     {
         cachedCardData.AddSuits(0, 0, 0, amount);
-        newCardUI.AddCloudSuit();
+        Sprite sprite = newCardUI.AddCloudSuit();
+
+        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup.Show(sprite);
+        StartCoroutine(SetDialogReactionImage(sprite));
+    }
+
+    private IEnumerator SetDialogReactionImage(Sprite sprite)
+    {
+        yield return new WaitForSeconds(0.05f);
+        
+        Image image = reactionImagesParent.GetComponentsInChildren<Image>().Last(i => i.CompareTag("Reaction Image"));
+        image.sprite = sprite;
+        image.color = Color.white;
     }
 
     public void CreateCardFromCache()
     {
         AddStoryToDeck(cachedCardData);
+        newCardUI.ShowNewCard();
     }
 }

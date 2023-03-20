@@ -17,27 +17,41 @@ public class CardSuitIcon : MonoBehaviour
         newCardUI = GetComponentInParent<NewCardUI>();
     }
 
-    public void AssignHeart()
+    public Sprite AssignHeart()
     {
         image.sprite = newCardUI.heartIcon;
-        animator.Play("suit_icon_appear");
+        // animator.Play("suit_icon_appear");
+        
+        return image.sprite;
     }
 
-    public void AssignBulb()
+    public Sprite AssignBulb()
     {
         image.sprite = newCardUI.bulbIcon;
-        animator.Play("suit_icon_appear");
+        // animator.Play("suit_icon_appear");
+        
+        return image.sprite;
     }
 
-    public void AssignFist()
+    public Sprite AssignFist()
     {
         image.sprite = newCardUI.fistIcon;
-        animator.Play("suit_icon_appear");
+        // animator.Play("suit_icon_appear");
+        
+        return image.sprite;
     }
 
-    public void AssignCloud()
+    public Sprite AssignCloud()
     {
         image.sprite = newCardUI.cloudIcon;
+        // animator.Play("suit_icon_appear");
+        
+        return image.sprite;
+    }
+
+    public void PopUpIcon()
+    {
+        image.color = Color.white;
         animator.Play("suit_icon_appear");
     }
 

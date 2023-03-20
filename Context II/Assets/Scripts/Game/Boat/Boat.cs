@@ -23,7 +23,7 @@ public class Boat : MonoBehaviour
     
     private void Awake()
     {
-        camCtrl = GetComponentInChildren<CameraController>();
+        camCtrl = FindObjectOfType<CameraController>();
         touristSeats = GetComponentsInChildren<Seat>().ToList();
     }
 

@@ -31,12 +31,30 @@ public class NewCardUI : MonoBehaviour
     public void ShowNewCard()
     {
         animator.Play("new_card_appear");
-        
+    }
+
+    public void ResetIcons()
+    {
         cardDescription.text = "";
-        foreach (CardSuitIcon suitIcon in cardSuitIcons)
+        foreach (CardSuitIcon icon in cardSuitIcons)
         {
-            suitIcon.ResetIcon();
+            icon.ResetIcon();
         }
+    }
+
+    public void PopUpEmotionIcons()
+    {
+        StartCoroutine(_PopUpEmotionIcons());
+    }
+
+    private IEnumerator _PopUpEmotionIcons()
+    {
+        foreach (CardSuitIcon icon in cardSuitIcons)
+        {
+            icon.PopUpIcon();
+            yield return new WaitForSeconds(0.5f);
+        }
+        animator.Play("new_card_slideToDeck");
     }
 
     public void UpdateDescription(string description)
@@ -44,32 +62,37 @@ public class NewCardUI : MonoBehaviour
         cardDescription.text = description;
     }
 
-    public void AddHeartSuit()
+    public Sprite AddHeartSuit()
     {
-        cardSuitIcons[suitsAdded].AssignHeart();
         suitsAdded++;
+        return cardSuitIcons[suitsAdded].AssignHeart();
     }
 
-    public void AddBulbSuit()
+    public Sprite AddBulbSuit()
     {
-        cardSuitIcons[suitsAdded].AssignBulb();
         suitsAdded++;
+        return cardSuitIcons[suitsAdded].AssignBulb();
     }
 
-    public void AddFistSuit()
+    public Sprite AddFistSuit()
     {
-        cardSuitIcons[suitsAdded].AssignFist();
         suitsAdded++;
+        return cardSuitIcons[suitsAdded].AssignFist();
     }
 
-    public void AddCloudSuit()
+    public Sprite AddCloudSuit()
     {
-        cardSuitIcons[suitsAdded].AssignCloud();
         suitsAdded++;
+        return cardSuitIcons[suitsAdded].AssignCloud();
     }
 
     public void PlayAddToDeckAnimation()
     {
-        animator.Play("new_card_bringToCenter");
+        // animator.Play("new_card_bringToCenter");
+    }
+
+    public Vector3 GetNewSuitPos()
+    {
+        return cardSuitIcons[suitsAdded].transform.position;
     }
 }

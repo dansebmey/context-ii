@@ -18,6 +18,5 @@ public class Local : StoppingPoint
     {
         dialogTrigger.startConversationEntryTitle = conversationTitle;
         dialogTrigger.OnUse();
-        newCardUI.ShowNewCard();
     }
 }

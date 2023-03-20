@@ -12,6 +12,10 @@
         <e p="Animations" t="Include">
           <e p="UI" t="Include" />
         </e>
+        <e p="david_art" t="Include">
+          <e p="3D_assets" t="Include" />
+          <e p="3d_prefabs" t="Include" />
+        </e>
         <e p="FarlandSkies" t="Include">
           <e p="Demo" t="Include">
             <e p="Materials" t="Include" />
@@ -1707,6 +1711,7 @@
             <e p="CardData.cs" t="Include" />
             <e p="CardDatabase.cs" t="Include" />
             <e p="CardSuitIcon.cs" t="Include" />
+            <e p="EmotionSpritePopup.cs" t="Include" />
             <e p="LocalTipHUD.cs" t="Include" />
             <e p="NewCardUI.cs" t="Include" />
             <e p="ScorePopups" t="Include">

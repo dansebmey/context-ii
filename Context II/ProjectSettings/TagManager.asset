@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pier
   - Seat
+  - Reaction Image
   layers:
   - Default
   - TransparentFX
