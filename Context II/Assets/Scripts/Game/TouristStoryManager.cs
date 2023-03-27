@@ -11,6 +11,7 @@ public class TouristStoryManager : MonoBehaviour
 {
     public Boat boat;
     private readonly List<CardData> deck = new List<CardData>();
+    private readonly List<CardData> cardsPlayedThisRound = new List<CardData>();
     
     public NewCardUI newCardUI;
     private CardData cachedCardData;
@@ -33,8 +34,12 @@ public class TouristStoryManager : MonoBehaviour
     
     private void Start()
     {
-        AddStoryToDeck(new CardData("Iets over vogeltjes", +1, 0, 0, 0));
-        AddStoryToDeck(new CardData("Iets over wetenschap", 0, +1, 0, 0));
+        AddStoryToDeck(new CardData("Rupsen van de nachtpauwoog zijn etend op de heide te vinden.", +1, 0, 0, 0));
+        AddStoryToDeck(new CardData("Konijnen beginnen zich aan de voortplanting te wijden.", +1, 0, 0, 0));
+        AddStoryToDeck(new CardData("Technische banen voor het oprapen als gevolg van de energietransitie.", 0, +1, 0, 0));
+        AddStoryToDeck(new CardData("Koopkracht Nederlanders nog steeds stabiel, volgens experts.", 0, +1, 0, 0));
+        AddStoryToDeck(new CardData("Klimaatbureau van de VN presenteert alarmerend rapport.", 0, 0, +1, 0));
+        AddStoryToDeck(new CardData("Shell investeert vooralsnog flink in fossiele brandstoffen.", 0, 0, +1, 0));
         // AddStoryToDeck(new CardData("Iets controversieels", 0, 0, +1, +1));
     }
 
@@ -46,6 +51,7 @@ public class TouristStoryManager : MonoBehaviour
         }
 
         boat.CollectTipsFromTourists();
+        cardsPlayedThisRound.Add(cardData);
     }
     
     private CardData __GenerateCardData()
@@ -57,11 +63,16 @@ public class TouristStoryManager : MonoBehaviour
             Random.Range(0, 2));
     }
 
+    public void StartNewRound()
+    {
+        cardsPlayedThisRound.Clear();
+    }
+
     public List<CardData> DrawCards(int amount)
     {
-        List<CardData> deckCopy = new List<CardData>(deck);
+        List<CardData> deckCopy = new List<CardData>(deck).Where(cd => !cardsPlayedThisRound.Contains(cd)).ToList();
         List<CardData> drawnCards = new List<CardData>();
-
+        
         while (drawnCards.Count < amount || deckCopy.Count > 0)
         {
             CardData randomCardData = deckCopy[Random.Range(0, deckCopy.Count)];

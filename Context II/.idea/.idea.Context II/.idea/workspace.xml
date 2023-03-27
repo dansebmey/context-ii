@@ -92,7 +92,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/EmotionSpritePopup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/Local.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/TouristPromptTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TouristStoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Meta/EventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/StoryTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CardSuitIcon.cs" />
@@ -104,6 +103,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/EndOfSceneTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/EndOfSceneCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Tourist.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TouristStoryManager.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +153,7 @@
       <workItem from="1679235006507" duration="1284000" />
       <workItem from="1679305269629" duration="5287000" />
       <workItem from="1679568968469" duration="5574000" />
-      <workItem from="1679827124557" duration="27823000" />
+      <workItem from="1679827124557" duration="28724000" />
     </task>
     <servers />
   </component>
