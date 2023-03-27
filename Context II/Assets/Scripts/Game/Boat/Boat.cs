@@ -125,7 +125,7 @@ public class Boat : MonoBehaviour
         seat.AssignTo(tourist);
     }
 
-    public List<Tourist> GetTourists()
+    public List<Tourist> GetTouristsOnBoard()
     {
         return touristsOnBoard;
     }
@@ -139,9 +139,14 @@ public class Boat : MonoBehaviour
         }
         
         // temp
-        FindObjectOfType<TipCounter>().AddToCounter(total);
+        // FindObjectOfType<TipCounter>().AddToCounter(total);
             
         return total;
+    }
+    
+    public int CollectTipFromTourist(int index)
+    {
+        return touristsOnBoard[index].GetTipFromCheckout();
     }
 
     public void CheckOutTourists()

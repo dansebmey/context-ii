@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CardSuitIcon : MonoBehaviour
 {
-    private Image image;
+    [HideInInspector] public Image image;
     private Animator animator;
     private NewCardUI newCardUI;
 
@@ -55,8 +55,19 @@ public class CardSuitIcon : MonoBehaviour
         animator.Play("suit_icon_appear");
     }
 
+    public void PopDownIcon()
+    {
+        animator.Play("suit_icon_disappear");
+    }
+
     public void ResetIcon()
     {
+        image.color = Color.clear;
         image.sprite = newCardUI.placeholderIcon;
+    }
+
+    public void SetSprite(Sprite icon)
+    {
+        image.sprite = icon;
     }
 }

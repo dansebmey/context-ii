@@ -18,7 +18,7 @@ public class NewCardUI : MonoBehaviour
     private TMP_Text cardDescription;
     private CardSuitIcon[] cardSuitIcons;
 
-    private int suitsAdded;
+    private int suitsAdded = -1;
 
     private void Awake()
     {
@@ -35,6 +35,7 @@ public class NewCardUI : MonoBehaviour
 
     public void ResetIcons()
     {
+        suitsAdded = -1;
         cardDescription.text = "";
         foreach (CardSuitIcon icon in cardSuitIcons)
         {
@@ -89,6 +90,14 @@ public class NewCardUI : MonoBehaviour
     public void PlayAddToDeckAnimation()
     {
         // animator.Play("new_card_bringToCenter");
+    }
+
+    public void Anim_HideSuitIcons()
+    {
+        foreach (CardSuitIcon icon in cardSuitIcons)
+        {
+            icon.PopDownIcon();
+        }
     }
 
     public Vector3 GetNewSuitPos()

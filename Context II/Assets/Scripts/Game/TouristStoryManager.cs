@@ -17,12 +17,18 @@ public class TouristStoryManager : MonoBehaviour
 
     private EmotionSpritePopup emotionSpritePopup;
     public Transform reactionImagesParent;
+    
+    [Header("In-dialog reaction images")]
+    public Sprite heartIconWithBG;
+    public Sprite bulbIconWithBG;
+    public Sprite fistIconWithBG;
+    public Sprite cloudIconWithBG;
 
     private void Awake()
     {
         emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
         
-        EventManager<CardData>.AddListener(EventType.OnCardPlayed, PlayCard);
+        EventManager<CardData, Card.CardID>.AddListener(EventType.OnCardPicked, PlayCard);
     }
     
     private void Start()
@@ -32,9 +38,9 @@ public class TouristStoryManager : MonoBehaviour
         // AddStoryToDeck(new CardData("Iets controversieels", 0, 0, +1, +1));
     }
 
-    private void PlayCard(CardData cardData)
+    private void PlayCard(CardData cardData, Card.CardID cardID)
     {
-        foreach (Tourist tourist in boat.GetTourists())
+        foreach (Tourist tourist in boat.GetTouristsOnBoard())
         {
             tourist.ApplyCardEffects(cardData);
         }
@@ -84,8 +90,8 @@ public class TouristStoryManager : MonoBehaviour
         Sprite sprite = newCardUI.AddHeartSuit();
         
         emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
-        emotionSpritePopup.Show(sprite);
-        StartCoroutine(SetDialogReactionImage(sprite));
+        emotionSpritePopup.Show(heartIconWithBG);
+        StartCoroutine(SetDialogReactionImage(heartIconWithBG));
     }
 
     public void AddBulbsToCard(int amount)
@@ -94,8 +100,8 @@ public class TouristStoryManager : MonoBehaviour
         Sprite sprite = newCardUI.AddBulbSuit();
         
         emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
-        emotionSpritePopup.Show(sprite);
-        StartCoroutine(SetDialogReactionImage(sprite));
+        emotionSpritePopup.Show(bulbIconWithBG);
+        StartCoroutine(SetDialogReactionImage(bulbIconWithBG));
     }
 
     public void AddFistsToCard(int amount)
@@ -104,8 +110,8 @@ public class TouristStoryManager : MonoBehaviour
         Sprite sprite = newCardUI.AddFistSuit();
         
         emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
-        emotionSpritePopup.Show(sprite);
-        StartCoroutine(SetDialogReactionImage(sprite));
+        emotionSpritePopup.Show(fistIconWithBG);
+        StartCoroutine(SetDialogReactionImage(fistIconWithBG));
     }
 
     public void AddCloudsToCard(int amount)
@@ -114,8 +120,8 @@ public class TouristStoryManager : MonoBehaviour
         Sprite sprite = newCardUI.AddCloudSuit();
 
         emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
-        emotionSpritePopup.Show(sprite);
-        StartCoroutine(SetDialogReactionImage(sprite));
+        emotionSpritePopup.Show(cloudIconWithBG);
+        StartCoroutine(SetDialogReactionImage(cloudIconWithBG));
     }
 
     private IEnumerator SetDialogReactionImage(Sprite sprite)
@@ -131,5 +137,10 @@ public class TouristStoryManager : MonoBehaviour
     {
         AddStoryToDeck(cachedCardData);
         newCardUI.ShowNewCard();
+    }
+
+    private void OnDestroy()
+    {
+        EventManager<CardData, Card.CardID>.RemoveListener(EventType.OnCardPicked, PlayCard);
     }
 }

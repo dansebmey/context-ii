@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 
 public class Tourist : MonoBehaviour
 {
+    public Sprite chathead;
+    
     private int initialTipValue;
     // This is the money you get when dropping the tourist off.
 
@@ -17,6 +19,11 @@ public class Tourist : MonoBehaviour
     private const int NEUTRAL = 0;
     private const int DESPICABLE = -1;
 
+    private const int SUIT_HEARTS = 0;
+    private const int SUIT_BULBS = 1;
+    private const int SUIT_FISTS = 2;
+    private const int SUIT_CLOUDS = 3;
+
     [Range(-1, +1)] public int heartLevel;
     [Range(-1, +1)] public int brainLevel;
     [Range(-1, +1)] public int fistLevel;
@@ -27,11 +34,12 @@ public class Tourist : MonoBehaviour
     private int currentTipValue;
     private int tipMultiplier = 1;
     private int lastTipBonus;
-    private LocalTipHUD localTipHUD;
+    public LocalTipHUD localTipHUD;
+    private TouristPortrait portrait;
 
     private void Awake()
     {
-        localTipHUD = GetComponentInChildren<LocalTipHUD>();
+        EventManager<int>.AddListener(EventType.OnSuitPlayed, OnSuitPlayed);
     }
 
     private void Start()
@@ -49,6 +57,25 @@ public class Tourist : MonoBehaviour
     public void ApplyCardEffects(CardData cardData)
     {
         HandleTipBonus(cardData);
+    }
+
+    private void OnSuitPlayed(int suitConst)
+    {
+        switch (suitConst)
+        {
+            case SUIT_HEARTS:
+                if (suitAffinities.x > 0) portrait.AddHeart(suitAffinities.x);
+                break;
+            case SUIT_BULBS:
+                if (suitAffinities.y > 0) portrait.AddBulb(suitAffinities.y);
+                break;
+            case SUIT_FISTS:
+                if (suitAffinities.z > 0) portrait.AddFist(suitAffinities.z);
+                break;
+            case SUIT_CLOUDS:
+                if (suitAffinities.w > 0) portrait.AddCloud();
+                break;
+        }
     }
 
     private void HandleTipBonus(CardData cardData)
@@ -76,5 +103,10 @@ public class Tourist : MonoBehaviour
         Debug.Log("Tourist [" + gameObject.name + "] gave a total tip of [" + finalTip + "]");
         
         return finalTip;
+    }
+
+    public void SetPortrait(TouristPortrait touristPortrait)
+    {
+        portrait = touristPortrait;
     }
 }

@@ -15,6 +15,8 @@
         <e p="david_art" t="Include">
           <e p="3D_assets" t="Include" />
           <e p="3d_prefabs" t="Include" />
+          <e p="animation_controllers" t="Include" />
+          <e p="StartRandomFrame.cs" t="Include" />
         </e>
         <e p="FarlandSkies" t="Include">
           <e p="Demo" t="Include">
@@ -23,12 +25,8 @@
             <e p="Scripts" t="Include">
               <e p="Player" t="Include">
                 <e p="FPSWalkerEnhanced.cs" t="Include" />
-                <e p="SmoothMouseLook.cs" t="Include" />
               </e>
-              <e p="Skybox" t="Include">
-                <e p="SkyboxChanger.cs" t="Include" />
-                <e p="SkyboxRotator.cs" t="Include" />
-              </e>
+              <e p="Skybox" t="Include" />
             </e>
             <e p="Textures" t="Include" />
           </e>
@@ -55,6 +53,39 @@
           <e p="3d_prefabs" t="Include">
             <e p="blockout" t="Include">
               <e p="test" t="Include" />
+            </e>
+          </e>
+          <e p="FarlandSkies" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Materials" t="Include" />
+              <e p="Models" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="Player" t="Include">
+                  <e p="SmoothMouseLook.cs" t="Include" />
+                </e>
+                <e p="Skybox" t="Include">
+                  <e p="SkyboxChanger.cs" t="Include" />
+                  <e p="SkyboxRotator.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Textures" t="Include" />
+            </e>
+            <e p="Skyboxes" t="Include">
+              <e p="CloudyCrown_01_Midday" t="Include">
+                <e p="Textures" t="Include" />
+              </e>
+              <e p="CloudyCrown_02_Evening" t="Include">
+                <e p="Textures" t="Include" />
+              </e>
+              <e p="CloudyCrown_03_Midnight" t="Include">
+                <e p="Textures" t="Include" />
+              </e>
+              <e p="CloudyCrown_04_Sunset" t="Include">
+                <e p="Textures" t="Include" />
+              </e>
+              <e p="CloudyCrown_05_Daybreak" t="Include">
+                <e p="Textures" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Materials" t="Include" />
@@ -1444,7 +1475,6 @@
                       <e p="DieOnTakeDamage.cs" t="Include" />
                       <e p="NavigateOnMouseClick.cs" t="Include" />
                       <e p="SimpleController.cs" t="Include" />
-                      <e p="SmoothCameraWithBumper.cs" t="Include" />
                     </e>
                     <e p="Deprecated" t="Include">
                       <e p="_README.txt" t="Include" />
@@ -1682,25 +1712,34 @@
           <e p="UI" t="Include" />
         </e>
         <e p="Resources" t="Include">
-          <e p="Sprites" t="Include" />
+          <e p="Sprites" t="Include">
+            <e p="Cards final" t="Include" />
+          </e>
         </e>
-        <e p="Scenes" t="Include" />
+        <e p="Scenes" t="Include">
+          <e p="David_scene 1" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
             <e p="Boat" t="Include">
               <e p="Boat.cs" t="Include" />
               <e p="CameraTrigger.cs" t="Include" />
+              <e p="EndOfSceneTrigger.cs" t="Include" />
               <e p="Local.cs" t="Include" />
               <e p="Pier.cs" t="Include" />
               <e p="Seat.cs" t="Include" />
               <e p="StoppingPoint.cs" t="Include" />
               <e p="StoryTrigger.cs" t="Include" />
+              <e p="TouristPromptTrigger.cs" t="Include" />
             </e>
             <e p="CameraController.cs" t="Include" />
             <e p="CinemaBarOverlay.cs" t="Include" />
+            <e p="EndOfSceneCanvas.cs" t="Include" />
             <e p="Story.cs" t="Include" />
             <e p="Tourist.cs" t="Include" />
+            <e p="TouristChathead.cs" t="Include" />
             <e p="TouristCrowd.cs" t="Include" />
+            <e p="TouristPortrait.cs" t="Include" />
             <e p="TouristStoryManager.cs" t="Include" />
           </e>
           <e p="Meta" t="Include">
@@ -1710,6 +1749,7 @@
             <e p="Card.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
             <e p="CardDatabase.cs" t="Include" />
+            <e p="Cards" t="Include" />
             <e p="CardSuitIcon.cs" t="Include" />
             <e p="EmotionSpritePopup.cs" t="Include" />
             <e p="LocalTipHUD.cs" t="Include" />
