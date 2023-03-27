@@ -284,6 +284,104 @@ MonoBehaviour:
       value: +1 if the answer showed anger/disapproval.
       type: 0
       typeString: 
+  - id: 6
+    fields:
+    - title: Name
+      value: Can talk about Mark
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 7
+    fields:
+    - title: Name
+      value: Can talk about Jaap
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 8
+    fields:
+    - title: Name
+      value: Can talk about Conference
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 9
+    fields:
+    - title: Name
+      value: Can talk about Decibels
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 10
+    fields:
+    - title: Name
+      value: Can talk about moving existing windmill
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 11
+    fields:
+    - title: Name
+      value: Can talk about moving upcoming windmill
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 12
+    fields:
+    - title: Name
+      value: Can talk about visibility windmills birds
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
