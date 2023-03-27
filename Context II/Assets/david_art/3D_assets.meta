@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Context II/Assets/lili_art/3d_prefabs/farm_house.prefab.meta
+guid: 101c64aaa917f46468abe15a6c28886c
+PrefabImporter:
+========
 guid: 09840ea38dc5dc64ca2a992d5d9b2d5c
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> David:Context II/Assets/david_art/3D_assets.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

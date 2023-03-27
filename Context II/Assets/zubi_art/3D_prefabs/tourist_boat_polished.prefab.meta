@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Context II/Assets/zubi_art/3D_prefabs/tourist_boat_polished.prefab.meta
 guid: 98b4ddc58f7f146439801518d293bc9e
 PrefabImporter:
+========
+guid: 3d2e3f4bff6b7434b81fd1c7e42380d0
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> David:Context II/Assets/david_art.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
