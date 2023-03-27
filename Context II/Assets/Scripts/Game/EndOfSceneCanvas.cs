@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndOfSceneCanvas : MonoBehaviour
@@ -103,9 +104,15 @@ public class EndOfSceneCanvas : MonoBehaviour
             
             yield return new WaitForSeconds(0.01f);
         }
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
+        animator.Play("eosCanvas_toNextScene");
     }
 
+    public void ToNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    
     private void SetBalanceLabelText(int visualTotal)
     {
         if (visualTotal < 0) balanceLabel.text = "<color=#FF4242>-€" + visualTotal + "</color>";

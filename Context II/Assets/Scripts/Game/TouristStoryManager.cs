@@ -100,7 +100,7 @@ public class TouristStoryManager : MonoBehaviour
         cachedCardData.AddSuits(amount, 0, 0, 0);
         Sprite sprite = newCardUI.AddHeartSuit();
         
-        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup = FindObjectsOfType<EmotionSpritePopup>().First(p => p.CompareTag("Reaction Image"));
         emotionSpritePopup.Show(heartIconWithBG);
         StartCoroutine(SetDialogReactionImage(heartIconWithBG));
     }
@@ -110,7 +110,7 @@ public class TouristStoryManager : MonoBehaviour
         cachedCardData.AddSuits(0, amount, 0, 0);
         Sprite sprite = newCardUI.AddBulbSuit();
         
-        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup = FindObjectsOfType<EmotionSpritePopup>().First(p => p.CompareTag("Reaction Image"));
         emotionSpritePopup.Show(bulbIconWithBG);
         StartCoroutine(SetDialogReactionImage(bulbIconWithBG));
     }
@@ -120,7 +120,7 @@ public class TouristStoryManager : MonoBehaviour
         cachedCardData.AddSuits(0, 0, amount, 0);
         Sprite sprite = newCardUI.AddFistSuit();
         
-        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup = FindObjectsOfType<EmotionSpritePopup>().First(p => p.CompareTag("Reaction Image"));
         emotionSpritePopup.Show(fistIconWithBG);
         StartCoroutine(SetDialogReactionImage(fistIconWithBG));
     }
@@ -130,7 +130,7 @@ public class TouristStoryManager : MonoBehaviour
         cachedCardData.AddSuits(0, 0, 0, amount);
         Sprite sprite = newCardUI.AddCloudSuit();
 
-        emotionSpritePopup = FindObjectOfType<EmotionSpritePopup>();
+        emotionSpritePopup = FindObjectsOfType<EmotionSpritePopup>().First(p => p.CompareTag("Reaction Image"));
         emotionSpritePopup.Show(cloudIconWithBG);
         StartCoroutine(SetDialogReactionImage(cloudIconWithBG));
     }
