@@ -14,17 +14,19 @@ public class TouristPortrait : MonoBehaviour
     public Sprite placeholderIcon;
     
     private Image chatheadImage;
-    private readonly List<Image> responseIcons = new List<Image>();
+    // private readonly List<Image> responseIcons = new List<Image>();
     private EmotionSpritePopup emotionSpritePopup;
+    [HideInInspector] public SatisfactionUI satisfactionUI;
     // public Transform chatHeadTx;
 
-    private int suitsAdded;
+    private int suitsAdded = 0;
     
     private void Awake()
     {
         chatheadImage = GetComponent<Image>();
         Awake_RegisterResponseIcons();
         emotionSpritePopup = GetComponentInChildren<EmotionSpritePopup>();
+        satisfactionUI = GetComponentInChildren<SatisfactionUI>();
     }
 
     private void Awake_RegisterResponseIcons()
@@ -32,7 +34,7 @@ public class TouristPortrait : MonoBehaviour
         Image[] icons = GetComponentsInChildren<Image>();
         for (int i = 2; i < icons.Length; i++)
         {
-            responseIcons.Add(icons[i]);
+            // responseIcons.Add(icons[i]);
         }
     }
 
@@ -50,43 +52,51 @@ public class TouristPortrait : MonoBehaviour
         // chatHead
     }
 
-    public void AddHeart(float suitFavourability)
+    public void AddHeart(float suitFavourability, float touristHappiness)
     {
         suitsAdded++;
-        responseIcons[suitsAdded].sprite = heartIcon;
+        // responseIcons[suitsAdded].sprite = heartIcon;
         
         // if (suitFavourability > 0) emotionSpritePopup.Show(heartIcon);
         // else
-        if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        
+        satisfactionUI.UpdateUI(heartIcon, touristHappiness);
     }
-
-    public void AddBulb(float suitFavourability)
+    
+    public void AddBulb(float suitFavourability, float touristHappiness)
     {
         suitsAdded++;
-        responseIcons[suitsAdded].sprite = bulbIcon;
-        if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        // responseIcons[suitsAdded].sprite = bulbIcon;
+        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        
+        satisfactionUI.UpdateUI(bulbIcon, touristHappiness);
     }
 
-    public void AddFist(float suitFavourability)
+    public void AddFist(float suitFavourability, float touristHappiness)
     {
         suitsAdded++;
-        responseIcons[suitsAdded].sprite = fistIcon;
-        if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        // responseIcons[suitsAdded].sprite = fistIcon;
+        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
+        
+        satisfactionUI.UpdateUI(fistIcon, touristHappiness);
     }
 
-    public void AddCloud()
+    public void AddCloud(float touristHappiness)
     {
         suitsAdded++;
-        responseIcons[suitsAdded].sprite = cloudIcon;
-        emotionSpritePopup.Show(cloudIcon);
+        // responseIcons[suitsAdded].sprite = cloudIcon;
+        // emotionSpritePopup.Show(cloudIcon);
+        
+        satisfactionUI.UpdateUI(cloudIcon, touristHappiness);
     }
 
     public void ResetIcons()
     {
-        suitsAdded = -1;
-        foreach (Image icon in responseIcons)
-        {
-            icon.sprite = placeholderIcon;
-        }
+        suitsAdded = 0;
+        // foreach (Image icon in responseIcons)
+        // {
+        //     icon.sprite = placeholderIcon;
+        // }
     }
 }

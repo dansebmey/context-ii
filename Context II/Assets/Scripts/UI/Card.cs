@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -133,7 +134,7 @@ public class Card : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
 
     private IEnumerator _PlaySuits()
     {
-        foreach (CardSuitIcon icon in suitIcons)
+        foreach (CardSuitIcon icon in suitIcons.Where(i => i.image.sprite != placeholderIcon))
         {
             icon.PopDownIcon();
             
@@ -144,6 +145,7 @@ public class Card : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
             
             yield return new WaitForSeconds(0.75f);
         }
+        yield return new WaitForSeconds(1.5f);
         
         animator.Play("card_discard");
         EventManager.Invoke(EventType.OnAllSuitsPlayed);

@@ -18,7 +18,7 @@ public class NewCardUI : MonoBehaviour
     private TMP_Text cardDescription;
     private CardSuitIcon[] cardSuitIcons;
 
-    private int suitsAdded = -1;
+    private int suitsAdded = 0;
 
     private void Awake()
     {
@@ -35,7 +35,7 @@ public class NewCardUI : MonoBehaviour
 
     public void ResetIcons()
     {
-        suitsAdded = -1;
+        suitsAdded = 0;
         cardDescription.text = "";
         foreach (CardSuitIcon icon in cardSuitIcons)
         {
@@ -66,25 +66,25 @@ public class NewCardUI : MonoBehaviour
     public Sprite AddHeartSuit()
     {
         suitsAdded++;
-        return cardSuitIcons[suitsAdded].AssignHeart();
+        return cardSuitIcons[suitsAdded - 1].AssignHeart();
     }
 
     public Sprite AddBulbSuit()
     {
         suitsAdded++;
-        return cardSuitIcons[suitsAdded].AssignBulb();
+        return cardSuitIcons[suitsAdded - 1].AssignBulb();
     }
 
     public Sprite AddFistSuit()
     {
         suitsAdded++;
-        return cardSuitIcons[suitsAdded].AssignFist();
+        return cardSuitIcons[suitsAdded - 1].AssignFist();
     }
 
     public Sprite AddCloudSuit()
     {
         suitsAdded++;
-        return cardSuitIcons[suitsAdded].AssignCloud();
+        return cardSuitIcons[suitsAdded - 1].AssignCloud();
     }
 
     public void PlayAddToDeckAnimation()

@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 19663224}
   - component: {fileID: 19663226}
   - component: {fileID: 19663225}
+  - component: {fileID: 19663227}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -296,6 +297,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19663223}
   m_CullTransparentMesh: 1
+--- !u!95 &19663227
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19663223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &23658552
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +355,7 @@ RectTransform:
   - {fileID: 1948368161}
   - {fileID: 1480578649}
   m_Father: {fileID: 348014089}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -1348,9 +1369,10 @@ RectTransform:
   m_GameObject: {fileID: 100682186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1520469106}
   - {fileID: 878792962}
   - {fileID: 1330464841}
   - {fileID: 786838604}
@@ -1359,8 +1381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 260, y: 72}
-  m_SizeDelta: {x: 240, y: 240}
+  m_AnchoredPosition: {x: 323, y: 49}
+  m_SizeDelta: {x: 700, y: 831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100682188
 MonoBehaviour:
@@ -1402,7 +1424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1437,6 +1459,7 @@ MonoBehaviour:
   fistIcon: {fileID: 21300000, guid: bb5c3addcfcfca743bad20ab6d3bcbdc, type: 3}
   cloudIcon: {fileID: 21300000, guid: 240a2088f1f206648b519294dca91e04, type: 3}
   placeholderIcon: {fileID: 21300000, guid: d19cee01dfe98fa4887e0473343d57eb, type: 3}
+  satisfactionUI: {fileID: 0}
 --- !u!4 &119376552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70,
@@ -1495,7 +1518,7 @@ Transform:
   - {fileID: 71060041}
   - {fileID: 1054465641}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &126553061
 BoxCollider:
@@ -1708,6 +1731,7 @@ GameObject:
   - component: {fileID: 140041957}
   - component: {fileID: 140041959}
   - component: {fileID: 140041958}
+  - component: {fileID: 140041960}
   m_Layer: 5
   m_Name: Icon (3)
   m_TagString: Untagged
@@ -1773,6 +1797,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140041956}
   m_CullTransparentMesh: 1
+--- !u!95 &140041960
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140041956}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &145492509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1828,7 @@ GameObject:
   - component: {fileID: 145492510}
   - component: {fileID: 145492512}
   - component: {fileID: 145492511}
+  - component: {fileID: 145492513}
   m_Layer: 5
   m_Name: Icon (6)
   m_TagString: Untagged
@@ -1849,6 +1894,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145492509}
   m_CullTransparentMesh: 1
+--- !u!95 &145492513
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145492509}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &156295845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1925,7 @@ GameObject:
   - component: {fileID: 156295846}
   - component: {fileID: 156295848}
   - component: {fileID: 156295847}
+  - component: {fileID: 156295849}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -1925,6 +1991,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156295845}
   m_CullTransparentMesh: 1
+--- !u!95 &156295849
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156295845}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &166832893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2162,9 +2248,10 @@ RectTransform:
   m_GameObject: {fileID: 213178028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1599547865}
   - {fileID: 969781254}
   - {fileID: 1971916597}
   - {fileID: 1136480993}
@@ -2173,8 +2260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 360, y: 60}
-  m_SizeDelta: {x: 240, y: 240}
+  m_AnchoredPosition: {x: 231.5, y: 48.7}
+  m_SizeDelta: {x: 700, y: 831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213178030
 MonoBehaviour:
@@ -2216,7 +2303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2251,6 +2338,7 @@ MonoBehaviour:
   fistIcon: {fileID: 21300000, guid: bb5c3addcfcfca743bad20ab6d3bcbdc, type: 3}
   cloudIcon: {fileID: 21300000, guid: 240a2088f1f206648b519294dca91e04, type: 3}
   placeholderIcon: {fileID: 21300000, guid: d19cee01dfe98fa4887e0473343d57eb, type: 3}
+  satisfactionUI: {fileID: 0}
 --- !u!1 &216423643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2350,7 @@ GameObject:
   - component: {fileID: 216423644}
   - component: {fileID: 216423646}
   - component: {fileID: 216423645}
+  - component: {fileID: 216423647}
   m_Layer: 5
   m_Name: Icon (5)
   m_TagString: Untagged
@@ -2327,6 +2416,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216423643}
   m_CullTransparentMesh: 1
+--- !u!95 &216423647
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216423643}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &224907662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2447,7 @@ GameObject:
   - component: {fileID: 224907663}
   - component: {fileID: 224907665}
   - component: {fileID: 224907664}
+  - component: {fileID: 224907666}
   m_Layer: 5
   m_Name: Icon (1)
   m_TagString: Untagged
@@ -2403,6 +2513,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224907662}
   m_CullTransparentMesh: 1
+--- !u!95 &224907666
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224907662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &238701761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238701762}
+  - component: {fileID: 238701764}
+  - component: {fileID: 238701763}
+  m_Layer: 5
+  m_Name: StoryPromptUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &238701762
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238701761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2077672400}
+  m_Father: {fileID: 670352830}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &238701763
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238701761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 089942062deed1943a895033c66c24f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &238701764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238701761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe40f683c976248b4ee21d02e5316c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subCanvas: {fileID: 2077672400}
+  leftCardUI: {fileID: 983643939}
+  middleCardUI: {fileID: 561946210}
+  rightCardUI: {fileID: 1533632121}
 --- !u!1 &268649986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,7 +2998,7 @@ Transform:
   - {fileID: 304988045}
   - {fileID: 2031185708}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &286444451
 BoxCollider:
@@ -2948,8 +3153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df82ca6d9b523d54fb5a069bfb9f87db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chathead: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
-  maxTipValue: 20
+  chathead: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
+  maxTipValue: 10
   heartLevel: -1
   brainLevel: 1
   fistLevel: 1
@@ -3650,9 +3855,10 @@ RectTransform:
   m_GameObject: {fileID: 348014088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 728651611}
   - {fileID: 774809247}
   - {fileID: 23658553}
   - {fileID: 690391462}
@@ -3661,8 +3867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 180, y: 60}
-  m_SizeDelta: {x: 240, y: 240}
+  m_AnchoredPosition: {x: 137.5, y: 48.7}
+  m_SizeDelta: {x: 700, y: 831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348014090
 MonoBehaviour:
@@ -3704,7 +3910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3739,6 +3945,7 @@ MonoBehaviour:
   fistIcon: {fileID: 21300000, guid: bb5c3addcfcfca743bad20ab6d3bcbdc, type: 3}
   cloudIcon: {fileID: 21300000, guid: 240a2088f1f206648b519294dca91e04, type: 3}
   placeholderIcon: {fileID: 21300000, guid: d19cee01dfe98fa4887e0473343d57eb, type: 3}
+  satisfactionUI: {fileID: 0}
 --- !u!1 &350216248
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,12 +3958,12 @@ GameObject:
   - component: {fileID: 350216250}
   - component: {fileID: 350216251}
   m_Layer: 0
-  m_Name: StoryPromptUI
+  m_Name: StoryPromptUI (old)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &350216249
 Transform:
   m_ObjectHideFlags: 0
@@ -3768,10 +3975,9 @@ Transform:
   m_LocalPosition: {x: -666.443, y: -300, z: 0}
   m_LocalScale: {x: 1.3422819, y: 1.3422819, z: 1.3422819}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2077672400}
+  m_Children: []
   m_Father: {fileID: 670352830}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &350216250
 MonoBehaviour:
@@ -4210,154 +4416,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358287953}
   m_CullTransparentMesh: 1
---- !u!1 &385016551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 385016552}
-  - component: {fileID: 385016555}
-  - component: {fileID: 385016554}
-  - component: {fileID: 385016553}
-  m_Layer: 0
-  m_Name: TipCounter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &385016552
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385016551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 531367672}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 152, y: -92}
-  m_SizeDelta: {x: 240, y: 120}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &385016553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385016551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "<color=#FFFFFF>Tip:</color> \u20AC0"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4286709656
-  m_fontColor: {r: 0.5978984, g: 1, b: 0.504717, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &385016554
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385016551}
-  m_CullTransparentMesh: 1
---- !u!114 &385016555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385016551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d545a447cbe841144bc78c98b2af21cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &385065283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5104,7 +5162,7 @@ Transform:
   m_Children:
   - {fileID: 1827843338}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &466288764
 BoxCollider:
@@ -5163,7 +5221,7 @@ Transform:
   m_Children:
   - {fileID: 62781431}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &468751308
 BoxCollider:
@@ -5958,43 +6016,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a8c1c39b6fee7334bae77160ba531151, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f61ef403046b94e907fa0f3f7b6bc7, type: 3}
---- !u!1 &531367671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 531367672}
-  m_Layer: 0
-  m_Name: HUD
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &531367672
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531367671}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 385016552}
-  m_Father: {fileID: 670352830}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &534968933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6006,6 +6027,7 @@ GameObject:
   - component: {fileID: 534968934}
   - component: {fileID: 534968936}
   - component: {fileID: 534968935}
+  - component: {fileID: 534968937}
   m_Layer: 5
   m_Name: Icon (3)
   m_TagString: Untagged
@@ -6071,6 +6093,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534968933}
   m_CullTransparentMesh: 1
+--- !u!95 &534968937
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534968933}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &552208847
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,7 +6360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -373.3, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 120, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &561946210
@@ -6371,6 +6413,7 @@ GameObject:
   - component: {fileID: 565013734}
   - component: {fileID: 565013736}
   - component: {fileID: 565013735}
+  - component: {fileID: 565013737}
   m_Layer: 5
   m_Name: Icon (1)
   m_TagString: Untagged
@@ -6436,6 +6479,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565013733}
   m_CullTransparentMesh: 1
+--- !u!95 &565013737
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565013733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &571768506
 GameObject:
   m_ObjectHideFlags: 0
@@ -7685,10 +7748,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1465940105}
   - {fileID: 350216249}
+  - {fileID: 238701762}
   - {fileID: 1701499639}
-  - {fileID: 531367672}
+  - {fileID: 1465940105}
   - {fileID: 987883941}
   - {fileID: 1589998364}
   m_Father: {fileID: 1461720318}
@@ -7882,7 +7945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &690391462
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7896,7 +7959,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 348014089}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8535,6 +8598,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a8c1c39b6fee7334bae77160ba531151, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f61ef403046b94e907fa0f3f7b6bc7, type: 3}
+--- !u!224 &728651611 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+    type: 3}
+  m_PrefabInstance: {fileID: 3981986378408074324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732499562
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,6 +8801,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1010834596}
   - {fileID: 286444450}
   - {fileID: 819072636}
   - {fileID: 126553060}
@@ -8744,7 +8814,6 @@ Transform:
   - {fileID: 2069047269}
   - {fileID: 896398507}
   - {fileID: 885893467}
-  - {fileID: 1010834596}
   m_Father: {fileID: 1064833029}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8759,6 +8828,7 @@ GameObject:
   - component: {fileID: 763758830}
   - component: {fileID: 763758832}
   - component: {fileID: 763758831}
+  - component: {fileID: 763758833}
   m_Layer: 5
   m_Name: Icon (7)
   m_TagString: Untagged
@@ -8824,6 +8894,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763758829}
   m_CullTransparentMesh: 1
+--- !u!95 &763758833
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763758829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &765916695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9947,7 +10037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &774809247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9961,7 +10051,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 348014089}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -10264,7 +10354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &786838604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10278,7 +10368,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 100682187}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10665,7 +10755,7 @@ Transform:
   m_Children:
   - {fileID: 1972962866}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &819072637
 BoxCollider:
@@ -11093,6 +11183,7 @@ GameObject:
   - component: {fileID: 861488059}
   - component: {fileID: 861488061}
   - component: {fileID: 861488060}
+  - component: {fileID: 861488062}
   m_Layer: 5
   m_Name: Icon (2)
   m_TagString: Untagged
@@ -11158,6 +11249,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861488058}
   m_CullTransparentMesh: 1
+--- !u!95 &861488062
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861488058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &865786364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12194,6 +12305,7 @@ GameObject:
   - component: {fileID: 870475896}
   - component: {fileID: 870475898}
   - component: {fileID: 870475897}
+  - component: {fileID: 870475899}
   m_Layer: 5
   m_Name: Icon (4)
   m_TagString: Untagged
@@ -12259,6 +12371,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870475895}
   m_CullTransparentMesh: 1
+--- !u!95 &870475899
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870475895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &878792961
 GameObject:
   m_ObjectHideFlags: 0
@@ -12278,7 +12410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &878792962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12292,7 +12424,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 100682187}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -12498,7 +12630,7 @@ Transform:
   m_Children:
   - {fileID: 2024763593}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &880902942
 BoxCollider:
@@ -12557,7 +12689,7 @@ Transform:
   m_Children:
   - {fileID: 879776306}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &885893468
 BoxCollider:
@@ -12613,8 +12745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df82ca6d9b523d54fb5a069bfb9f87db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chathead: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
-  maxTipValue: 20
+  chathead: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
+  maxTipValue: 10
   heartLevel: 1
   brainLevel: 0
   fistLevel: -1
@@ -12667,7 +12799,7 @@ Transform:
   m_Children:
   - {fileID: 288442403}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &896398508
 BoxCollider:
@@ -13103,7 +13235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &969781254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13117,7 +13249,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 213178029}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15952,7 +16084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1010834596
 Transform:
   m_ObjectHideFlags: 0
@@ -15967,7 +16099,7 @@ Transform:
   m_Children:
   - {fileID: 1674597039}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1010834597
 BoxCollider:
@@ -16748,7 +16880,7 @@ Transform:
   m_Children:
   - {fileID: 1117136095}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1075616543
 BoxCollider:
@@ -16881,7 +17013,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: a90f5bb59c9bc974d950e24679978a4a, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 992cb23dc6127c94582c2155f16064f3, type: 2}
 --- !u!114 &1085371892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16894,8 +17026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df82ca6d9b523d54fb5a069bfb9f87db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chathead: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
-  maxTipValue: 20
+  chathead: {fileID: 21300000, guid: fd93c98fdfc80dd4a946672c5abb0e73, type: 3}
+  maxTipValue: 10
   heartLevel: 1
   brainLevel: -1
   fistLevel: 1
@@ -17070,6 +17202,7 @@ GameObject:
   - component: {fileID: 1089994868}
   - component: {fileID: 1089994870}
   - component: {fileID: 1089994869}
+  - component: {fileID: 1089994871}
   m_Layer: 5
   m_Name: Icon (5)
   m_TagString: Untagged
@@ -17135,6 +17268,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089994867}
   m_CullTransparentMesh: 1
+--- !u!95 &1089994871
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089994867}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1103570399
 GameObject:
   m_ObjectHideFlags: 0
@@ -17146,6 +17299,7 @@ GameObject:
   - component: {fileID: 1103570400}
   - component: {fileID: 1103570402}
   - component: {fileID: 1103570401}
+  - component: {fileID: 1103570403}
   m_Layer: 5
   m_Name: Icon (8)
   m_TagString: Untagged
@@ -17211,6 +17365,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103570399}
   m_CullTransparentMesh: 1
+--- !u!95 &1103570403
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103570399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1112245486
 GameObject:
   m_ObjectHideFlags: 0
@@ -17646,7 +17820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1136480993
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17660,7 +17834,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 213178029}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17884,6 +18058,7 @@ GameObject:
   - component: {fileID: 1153715511}
   - component: {fileID: 1153715513}
   - component: {fileID: 1153715512}
+  - component: {fileID: 1153715514}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -17949,6 +18124,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153715510}
   m_CullTransparentMesh: 1
+--- !u!95 &1153715514
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153715510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1161337408
 GameObject:
   m_ObjectHideFlags: 0
@@ -18057,6 +18252,7 @@ GameObject:
   - component: {fileID: 1167049183}
   - component: {fileID: 1167049185}
   - component: {fileID: 1167049184}
+  - component: {fileID: 1167049186}
   m_Layer: 5
   m_Name: Icon (7)
   m_TagString: Untagged
@@ -18122,6 +18318,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167049182}
   m_CullTransparentMesh: 1
+--- !u!95 &1167049186
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167049182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1175584627
 GameObject:
   m_ObjectHideFlags: 0
@@ -18133,6 +18349,7 @@ GameObject:
   - component: {fileID: 1175584628}
   - component: {fileID: 1175584630}
   - component: {fileID: 1175584629}
+  - component: {fileID: 1175584631}
   m_Layer: 5
   m_Name: Icon (4)
   m_TagString: Untagged
@@ -18198,6 +18415,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175584627}
   m_CullTransparentMesh: 1
+--- !u!95 &1175584631
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175584627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1176104982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18535,7 +18772,7 @@ Transform:
   m_Children:
   - {fileID: 8179738}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1196461491
 BoxCollider:
@@ -19038,7 +19275,7 @@ RectTransform:
   m_GameObject: {fileID: 1226945511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1510259208}
@@ -19046,8 +19283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -180, y: 60}
-  m_SizeDelta: {x: 240, y: 240}
+  m_AnchoredPosition: {x: -180, y: 48}
+  m_SizeDelta: {x: 700, y: 831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226945513
 MonoBehaviour:
@@ -19089,7 +19326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: deeae33315027e045bf104c3f198179d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0280a6d4dca6c174a91b2f2a5029f3f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19380,7 +19617,7 @@ Transform:
   m_Children:
   - {fileID: 1118253719}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1263755701
 BoxCollider:
@@ -19527,6 +19764,7 @@ GameObject:
   - component: {fileID: 1265849628}
   - component: {fileID: 1265849630}
   - component: {fileID: 1265849629}
+  - component: {fileID: 1265849631}
   m_Layer: 5
   m_Name: Icon (5)
   m_TagString: Untagged
@@ -19592,6 +19830,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265849627}
   m_CullTransparentMesh: 1
+--- !u!95 &1265849631
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265849627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1275119531
 GameObject:
   m_ObjectHideFlags: 0
@@ -19603,6 +19861,7 @@ GameObject:
   - component: {fileID: 1275119532}
   - component: {fileID: 1275119534}
   - component: {fileID: 1275119533}
+  - component: {fileID: 1275119535}
   m_Layer: 5
   m_Name: Icon (8)
   m_TagString: Untagged
@@ -19668,6 +19927,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275119531}
   m_CullTransparentMesh: 1
+--- !u!95 &1275119535
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275119531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1285451408 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4793205425293636341, guid: c1a751ec678f969448ae410fcb0b5aad,
@@ -20162,7 +20441,7 @@ RectTransform:
   - {fileID: 1167049183}
   - {fileID: 1103570400}
   m_Father: {fileID: 100682187}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -20771,7 +21050,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 670352830}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20982,6 +21261,7 @@ GameObject:
   - component: {fileID: 1480578649}
   - component: {fileID: 1480578651}
   - component: {fileID: 1480578650}
+  - component: {fileID: 1480578652}
   m_Layer: 5
   m_Name: Icon (8)
   m_TagString: Untagged
@@ -21047,6 +21327,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480578648}
   m_CullTransparentMesh: 1
+--- !u!95 &1480578652
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480578648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &1492962960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4793205425293636340, guid: c1a751ec678f969448ae410fcb0b5aad,
@@ -21289,10 +21589,10 @@ RectTransform:
   m_Father: {fileID: 2077672400}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 360, y: 447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1510911317
 PrefabInstance:
@@ -21398,6 +21698,151 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a8c1c39b6fee7334bae77160ba531151, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f61ef403046b94e907fa0f3f7b6bc7, type: 3}
+--- !u!1001 &1520469105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 100682187}
+    m_Modifications:
+    - target: {fileID: 3981986379090053902, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Name
+      value: SatisfactionUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 87.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2999c28ab2ddcc84bb6e439df9f0d454, type: 3}
+--- !u!224 &1520469106 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+    type: 3}
+  m_PrefabInstance: {fileID: 1520469105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1533632119
 GameObject:
   m_ObjectHideFlags: 0
@@ -21487,6 +21932,7 @@ GameObject:
   - component: {fileID: 1540179517}
   - component: {fileID: 1540179519}
   - component: {fileID: 1540179518}
+  - component: {fileID: 1540179520}
   m_Layer: 5
   m_Name: Icon (3)
   m_TagString: Untagged
@@ -21552,6 +21998,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540179516}
   m_CullTransparentMesh: 1
+--- !u!95 &1540179520
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540179516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1543129508
 GameObject:
   m_ObjectHideFlags: 0
@@ -22364,6 +22830,131 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594781388}
   m_CullTransparentMesh: 1
+--- !u!1001 &1599547864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 213178029}
+    m_Modifications:
+    - target: {fileID: 3981986379090053902, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Name
+      value: SatisfactionUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 87.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2999c28ab2ddcc84bb6e439df9f0d454, type: 3}
+--- !u!224 &1599547865 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+    type: 3}
+  m_PrefabInstance: {fileID: 1599547864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601532768
 GameObject:
   m_ObjectHideFlags: 0
@@ -24787,6 +25378,7 @@ GameObject:
   - component: {fileID: 1725141795}
   - component: {fileID: 1725141797}
   - component: {fileID: 1725141796}
+  - component: {fileID: 1725141798}
   m_Layer: 5
   m_Name: Icon (4)
   m_TagString: Untagged
@@ -24852,6 +25444,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725141794}
   m_CullTransparentMesh: 1
+--- !u!95 &1725141798
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725141794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1729060347
 GameObject:
   m_ObjectHideFlags: 0
@@ -26199,6 +26811,7 @@ GameObject:
   - component: {fileID: 1890006120}
   - component: {fileID: 1890006122}
   - component: {fileID: 1890006121}
+  - component: {fileID: 1890006123}
   m_Layer: 5
   m_Name: Icon (2)
   m_TagString: Untagged
@@ -26264,6 +26877,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890006119}
   m_CullTransparentMesh: 1
+--- !u!95 &1890006123
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890006119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1891083372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28820,6 +29453,7 @@ GameObject:
   - component: {fileID: 1928584398}
   - component: {fileID: 1928584400}
   - component: {fileID: 1928584399}
+  - component: {fileID: 1928584401}
   m_Layer: 5
   m_Name: Icon (6)
   m_TagString: Untagged
@@ -28885,6 +29519,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928584397}
   m_CullTransparentMesh: 1
+--- !u!95 &1928584401
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928584397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1931172064
 GameObject:
   m_ObjectHideFlags: 0
@@ -28896,6 +29550,7 @@ GameObject:
   - component: {fileID: 1931172065}
   - component: {fileID: 1931172067}
   - component: {fileID: 1931172066}
+  - component: {fileID: 1931172068}
   m_Layer: 5
   m_Name: Icon (2)
   m_TagString: Untagged
@@ -28961,6 +29616,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931172064}
   m_CullTransparentMesh: 1
+--- !u!95 &1931172068
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931172064}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1935680872
 GameObject:
   m_ObjectHideFlags: 0
@@ -28972,6 +29647,7 @@ GameObject:
   - component: {fileID: 1935680873}
   - component: {fileID: 1935680875}
   - component: {fileID: 1935680874}
+  - component: {fileID: 1935680876}
   m_Layer: 5
   m_Name: Icon (1)
   m_TagString: Untagged
@@ -29037,6 +29713,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935680872}
   m_CullTransparentMesh: 1
+--- !u!95 &1935680876
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935680872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1944748064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29284,6 +29980,7 @@ GameObject:
   - component: {fileID: 1948368161}
   - component: {fileID: 1948368163}
   - component: {fileID: 1948368162}
+  - component: {fileID: 1948368164}
   m_Layer: 5
   m_Name: Icon (7)
   m_TagString: Untagged
@@ -29349,6 +30046,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948368160}
   m_CullTransparentMesh: 1
+--- !u!95 &1948368164
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948368160}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1948631983
 GameObject:
   m_ObjectHideFlags: 0
@@ -30335,6 +31052,1251 @@ MonoBehaviour:
             m_StringArgument: De projectplanner vraagt Guido om hulp.
             m_BoolArgument: 0
           m_CallState: 2
+  - guid: c9304f0e-abe5-4aec-9994-3518ebfccddd
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
+  - guid: c1b536e4-bd26-4455-adf6-4b949ce945ca
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
+  - guid: f92eaad8-5619-462b-a130-f01b5a10b463
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: De projectplanner luistert naar de problemen.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: f6f00473-03ec-4abc-b3e9-180c9933062c
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: De projectplanner vraagt je om hulp.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 5a0d74a2-afba-4dbb-98be-c188244a51d0
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jaap vertelt over de geluidsoverlast veroorzaakt door
+              windmolens.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: b2800b22-20c9-486d-8df7-03a71f0d5866
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Frans vertelt over de afgelopen demonstratie tegen
+              de windmolens.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: a95a1667-f60b-4f65-b960-c7b9ad477355
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Mark vertelt over de impact van de windmolens op lokale
+              vogelsoorten.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 64a8da42-0c7f-465e-bef6-5dd9a76a7110
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Marijke vertelt over een spandoek dat zij wil ophangen
+              bij de windmolens.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: b4490172-4f9a-4bf4-bfc0-77e5d6c9ead5
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: NewCard
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Mark geeft je een pakketje om af te leveren bij de
+              windmolenbouwers.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 5ffecaa4-da77-4ee6-84d7-a58ecdbd0ab5
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1263755704}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 57403059-6ed6-4a95-a901-06a4a6c40d8a
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 195ea312-faba-46e8-ad34-93437f10854a
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2069047273}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 826fe5fa-e6ab-4afd-959f-9c43f3811100
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 89df3237-cc0f-4957-baaa-a5b2da4dedb6
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 3f2b368c-dd47-4b4c-af8f-3d4a5fabe17a
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 0d773cc6-4d80-4ee9-9780-258c61ffaf02
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 480a4f74-7cdc-4ba4-94de-d189e27f0fc7
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: ea69bc59-ed41-4bd4-a086-08fff017a7e3
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1778485679}
+          m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
+          m_MethodName: Close
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: CreateCardFromCache
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1543129510}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: PlayAddToDeckAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285451408}
+          m_TargetAssemblyTypeName: Boat, Assembly-CSharp
+          m_MethodName: StartSpeedingUp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: StoppingPoint, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 3130baa1-bcf4-4247-8931-1245d4f0bdb9
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 08dbcda7-207b-44a8-b1b1-e794f1ecec41
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 6d48c644-bc8b-4444-9bef-e36788b2e26f
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 3e016883-c807-41f3-befe-8a401c32f087
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 23c2544e-5ba6-42d6-9814-7e1d0062f87f
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: feee51c3-b754-4355-8c2c-0abd0887ab98
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: ce8199bb-a1c4-409b-adf4-f05c45c05d75
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: d8de0e8e-98d2-4dc1-ba43-5382a716d338
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 818b1021-2bd7-47c2-a083-e4696a9a80f0
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 99ab64e3-4a8c-4380-896d-92718e7b0ef9
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: a4e6b72d-ea23-4611-90d1-c865acc27409
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 9f0d6c1b-d5e9-44a6-aa02-042934f1b126
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: d20b0696-ed79-488a-9347-bf49db79cd03
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 5e5fa6d5-8a37-4fa8-adba-151155ba1a63
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: f12153cf-c675-4a15-8f7d-bc392a6eef38
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: e1ad79a4-c936-41cb-b023-d7221f403634
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 8f1cd8f8-0b36-4615-b89d-d891d45d26dd
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddFistsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 74b4e91c-aa97-4fdd-968f-334b893f4f0d
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: ab997ca0-2dc0-4be3-b6b6-ab70546ffc24
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: a5635831-aa2f-48d2-95a8-9821069bf90e
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 7aae1730-94b9-4d20-973f-ca460308b0f1
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddBulbsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 512d275a-f3b8-4374-9ed4-88080fe02468
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: a6ffa3e1-6f67-432d-be36-1095f31d200f
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 7d8c24b8-0a7b-46fc-ad1c-05bde1c971e0
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 3e80454e-dd2b-40d3-8020-0c0fd2b343e5
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 1587367f-dc53-4b1f-960f-cd37f61a5126
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: fccfba1c-9676-46c2-b42c-1c717402c2f4
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 04dcaedc-f16d-4057-9217-ef14d5addbe5
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 08b8e745-87e3-48b8-b1a2-dedad6621a89
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 7b31de53-2051-458c-be89-2d92bc48a913
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 28ac71fe-f3fe-49ad-98e4-60ba377170f8
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 27e13044-d46d-498b-bbb8-aa08c23c929d
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 7e7e1d71-4106-4e4f-9aa4-9d1af1d0edc6
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddHeartsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: afe63285-7b48-4beb-927c-e7510022fd0c
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 89c96ae1-7e51-4bf1-830c-de438164712a
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 9b8e1255-6b47-45e7-b157-bd6deeaffeb4
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 4e4bc910-733b-44e3-aa65-2b94b52b59c4
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: b3286ef6-5e45-451b-bbcc-08ebd2ff3974
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: b085a62f-1617-4a5f-a41b-592d63cd5405
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: 6710443d-cd75-4219-9fca-017a04d8658c
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571768507}
+          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
+          m_MethodName: AddCloudsToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1968791054
 Transform:
   m_ObjectHideFlags: 0
@@ -30388,7 +32350,7 @@ RectTransform:
   - {fileID: 763758830}
   - {fileID: 1275119532}
   m_Father: {fileID: 213178029}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -31418,6 +33380,7 @@ GameObject:
   - component: {fileID: 2061520101}
   - component: {fileID: 2061520103}
   - component: {fileID: 2061520102}
+  - component: {fileID: 2061520104}
   m_Layer: 5
   m_Name: Icon (6)
   m_TagString: Untagged
@@ -31483,6 +33446,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061520100}
   m_CullTransparentMesh: 1
+--- !u!95 &2061520104
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061520100}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac107c2274ab4e548b5a9215e01ee3b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2062423281
 GameObject:
   m_ObjectHideFlags: 0
@@ -31595,7 +33578,7 @@ Transform:
   m_Children:
   - {fileID: 2115736578}
   m_Father: {fileID: 757313623}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2069047270
 BoxCollider:
@@ -31756,7 +33739,7 @@ RectTransform:
   m_GameObject: {fileID: 2077672399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3422819, y: 1.3422819, z: 1.3422819}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 552208848}
@@ -31765,12 +33748,12 @@ RectTransform:
   - {fileID: 1533632120}
   - {fileID: 639608181}
   - {fileID: 1510259208}
-  m_Father: {fileID: 350216249}
+  m_Father: {fileID: 238701762}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 496.5, y: 236.1}
+  m_AnchoredPosition: {x: 50, y: 66.91275}
   m_SizeDelta: {x: 993, y: 447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2094000467
@@ -35292,6 +37275,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128053327}
   m_CullTransparentMesh: 1
+--- !u!1001 &3981986378408074324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 348014089}
+    m_Modifications:
+    - target: {fileID: 3981986379090053902, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Name
+      value: SatisfactionUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 87.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981986379090053903, guid: 2999c28ab2ddcc84bb6e439df9f0d454,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2999c28ab2ddcc84bb6e439df9f0d454, type: 3}
 --- !u!1001 &4793205424293960805
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class CardSuitIcon : MonoBehaviour
 {
     [HideInInspector] public Image image;
-    private Animator animator;
+    protected Animator animator;
     private NewCardUI newCardUI;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         image = GetComponent<Image>();
         animator = GetComponent<Animator>();

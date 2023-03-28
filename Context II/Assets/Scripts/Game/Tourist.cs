@@ -33,7 +33,7 @@ public class Tourist : MonoBehaviour
     // Realtime variables
     private int currentTipValue;
     private int tipMultiplier = 1;
-    private int lastTipBonus;
+    private int lastTipIncrease;
     public LocalTipHUD localTipHUD;
     private TouristPortrait portrait;
 
@@ -44,8 +44,9 @@ public class Tourist : MonoBehaviour
 
     private void Start()
     {
-        // initialTipValue = Random.Range(3, 5);
-        initialTipValue = 2;
+        initialTipValue = Random.Range(2, 6);
+        
+        // initialTipValue = 4;
         currentTipValue = initialTipValue;
 
         suitAffinities.x = heartLevel;
@@ -56,26 +57,68 @@ public class Tourist : MonoBehaviour
 
     public void ApplyCardEffects(CardData cardData)
     {
-        HandleTipBonus(cardData);
+        // HandleTipBonus(cardData);
     }
 
     private void OnSuitPlayed(int suitConst)
     {
+        int tipIncrease = 0;
+        
         switch (suitConst)
         {
             case SUIT_HEARTS:
-                if (suitAffinities.x > 0) portrait.AddHeart(suitAffinities.x);
+                if ((int)suitAffinities.x != 0)
+                {
+                    tipIncrease = (int)suitAffinities.x;
+                    currentTipValue += tipIncrease;
+                    
+                    portrait.AddHeart(suitAffinities.x, DetermineHappiness());
+                }
                 break;
             case SUIT_BULBS:
-                if (suitAffinities.y > 0) portrait.AddBulb(suitAffinities.y);
+                if ((int)suitAffinities.y != 0)
+                {
+                    tipIncrease = (int)suitAffinities.y;
+                    currentTipValue += tipIncrease;
+                    
+                    portrait.AddBulb(suitAffinities.y, DetermineHappiness());
+                }
                 break;
             case SUIT_FISTS:
-                if (suitAffinities.z > 0) portrait.AddFist(suitAffinities.z);
+                if ((int)suitAffinities.z != 0)
+                {
+                    tipIncrease = (int)suitAffinities.z;
+                    currentTipValue += tipIncrease;
+                    
+                    portrait.AddFist(suitAffinities.z, DetermineHappiness());
+                }
                 break;
             case SUIT_CLOUDS:
-                if (suitAffinities.w > 0) portrait.AddCloud();
+                if ((int)suitAffinities.w != 0)
+                {
+                    tipIncrease = (int)suitAffinities.w;
+                    currentTipValue += tipIncrease;
+                    
+                    portrait.AddCloud(DetermineHappiness());
+                }
                 break;
         }
+
+        if ((tipIncrease > 0 && lastTipIncrease > 0) || (tipIncrease < 0 && lastTipIncrease < 0))
+        {
+            tipMultiplier += 1;
+        }
+        else if (tipIncrease < 0 || tipIncrease > 0)
+        {
+            tipMultiplier = 1;
+        }
+
+        lastTipIncrease = tipIncrease;
+    }
+
+    private float DetermineHappiness()
+    {
+        return (1.0f / maxTipValue) * currentTipValue;
     }
 
     private void HandleTipBonus(CardData cardData)
@@ -84,7 +127,7 @@ public class Tourist : MonoBehaviour
         currentTipValue += tipBonus;
         Debug.Log("Tourist [" + gameObject.name + "] gave a tip bonus of [" + tipBonus + "] based on the card [" + cardData.GetSuitValues() + "]");
         
-        if ((tipBonus > 0 && lastTipBonus > 0) || (tipBonus < 0 && lastTipBonus < 0))
+        if ((tipBonus > 0 && lastTipIncrease > 0) || (tipBonus < 0 && lastTipIncrease < 0))
         {
             tipMultiplier += 1;
         }
@@ -93,7 +136,7 @@ public class Tourist : MonoBehaviour
             tipMultiplier = 1;
         }
         
-        lastTipBonus = tipBonus;
+        lastTipIncrease = tipBonus;
         localTipHUD.AddToFavour(tipBonus);
     }
 
@@ -108,5 +151,6 @@ public class Tourist : MonoBehaviour
     public void SetPortrait(TouristPortrait touristPortrait)
     {
         portrait = touristPortrait;
+        portrait.satisfactionUI.UpdateHappinessMeter(DetermineHappiness());
     }
 }

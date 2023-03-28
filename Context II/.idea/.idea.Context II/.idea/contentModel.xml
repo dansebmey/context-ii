@@ -1712,6 +1712,7 @@
           <e p="UI" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="Fonts" t="Include" />
           <e p="Sprites" t="Include">
             <e p="Cards final" t="Include" />
           </e>
@@ -1735,6 +1736,7 @@
             <e p="CameraController.cs" t="Include" />
             <e p="CinemaBarOverlay.cs" t="Include" />
             <e p="EndOfSceneCanvas.cs" t="Include" />
+            <e p="SatisfactionUI.cs" t="Include" />
             <e p="Story.cs" t="Include" />
             <e p="Tourist.cs" t="Include" />
             <e p="TouristChathead.cs" t="Include" />
@@ -1746,6 +1748,7 @@
             <e p="EventManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="AdvancedCardSuitIcon.cs" t="Include" />
             <e p="Card.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
             <e p="CardDatabase.cs" t="Include" />
