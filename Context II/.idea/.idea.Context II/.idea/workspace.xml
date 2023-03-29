@@ -99,7 +99,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StoryPromptUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/Boat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Boat/EndOfSceneTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/EndOfSceneCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CardSuitIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Tourist.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/TouristStoryManager.cs" />
@@ -109,6 +108,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/NewCardUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AdvancedCardSuitIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/EndOfSceneCanvas.cs" />
       </list>
     </option>
   </component>
@@ -131,10 +131,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="26020">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="26020" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>
@@ -161,6 +161,7 @@
       <workItem from="1679827124557" duration="29400000" />
       <workItem from="1679905228313" duration="4070000" />
       <workItem from="1680007098724" duration="17669000" />
+      <workItem from="1680089920400" duration="2767000" />
     </task>
     <servers />
   </component>

@@ -1715,6 +1715,7 @@
           <e p="Fonts" t="Include" />
           <e p="Sprites" t="Include">
             <e p="Cards final" t="Include" />
+            <e p="Chatheads" t="Include" />
           </e>
         </e>
         <e p="Scenes" t="Include">

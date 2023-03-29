@@ -9,13 +9,12 @@ using UnityEngine.UI;
 public class EndOfSceneCanvas : MonoBehaviour
 {
     public Image fadeOutOverlay;
+    public TMP_Text salaryLabel;
+    public TMP_Text tipsLabel;
     public TMP_Text rentCostsLabel;
     public TMP_Text foodCostsLabel;
-    public TMP_Text salaryLabel;
-    public TMP_Text tipFromTourist1Label;
-    public TMP_Text tipFromTourist2Label;
-    public TMP_Text tipFromTourist3Label;
     public TMP_Text balanceLabel;
+    private Button continueButton;
     
     private Animator animator;
     private Boat boat;
@@ -24,8 +23,14 @@ public class EndOfSceneCanvas : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         boat = FindObjectOfType<Boat>();
+        continueButton = GetComponentInChildren<Button>();
     }
-
+    
+    private void Start()
+    {
+        continueButton.gameObject.SetActive(false);
+    }
+    
     public void WrapUp()
     {
         animator.Play("eosCanvas_show");
@@ -38,84 +43,78 @@ public class EndOfSceneCanvas : MonoBehaviour
     
     private IEnumerator _Show()
     {
+        int salary = 80;
+        int tips = boat.CollectTipsFromTourists();
+        
         int rent = 50;
         int food = 40;
-        int salary = 80;
-        int tipFromTourist1 = boat.CollectTipFromTourist(0);
-        int tipFromTourist2 = boat.CollectTipFromTourist(1);
-        int tipFromTourist3 = boat.CollectTipFromTourist(2);
+        
         int visualTotal;
-        
-        for (int i = 0; i <= rent; i++)
-        {
-            visualTotal = -i;
-            rentCostsLabel.text = "- €" + i;
-            SetBalanceLabelText(visualTotal);
-            
-            yield return new WaitForSeconds(0.01f);
-        }
-        yield return new WaitForSeconds(0.5f);
-        
-        for (int i = 0; i <= food; i++)
-        {
-            visualTotal = -rent -i;
-            foodCostsLabel.text = "- €" + i;
-            SetBalanceLabelText(visualTotal);
-            
-            yield return new WaitForSeconds(0.01f);
-        }
-        yield return new WaitForSeconds(0.5f);
         
         for (int i = 0; i <= salary; i++)
         {
-            visualTotal = -rent -food +i;
-            salaryLabel.text = "+ €" + i;
-            SetBalanceLabelText(visualTotal);
-            
-            yield return new WaitForSeconds(0.01f);
-        }
-        yield return new WaitForSeconds(0.5f);
-
-        for (int i = 0; i <= tipFromTourist1; i++)
-        {
-            visualTotal = -rent -food +salary +i;
-            tipFromTourist1Label.text = "+ €" + i;
-            SetBalanceLabelText(visualTotal);
-            
-            yield return new WaitForSeconds(0.01f);
-        }
-        yield return new WaitForSeconds(0.5f);
-
-        for (int i = 0; i <= tipFromTourist2; i++)
-        {
-            visualTotal = -rent -food +salary +tipFromTourist1 +i;
-            tipFromTourist2Label.text = "+ €" + i;
+            visualTotal = i;
+            salaryLabel.text = "+ " + i;
             SetBalanceLabelText(visualTotal);
             
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(0.5f);
         
-        for (int i = 0; i <= tipFromTourist3; i++)
+        for (int i = 0; i <= tips; i++)
         {
-            visualTotal = -rent -food +salary +tipFromTourist1 +tipFromTourist2 +i;
-            tipFromTourist3Label.text = "+ €" + i;
+            visualTotal = salary + i;
+            tipsLabel.text = "+ " + i;
             SetBalanceLabelText(visualTotal);
             
             yield return new WaitForSeconds(0.01f);
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.5f);
+        
+        for (int i = 0; i <= rent; i++)
+        {
+            visualTotal = salary + tips - i;
+            rentCostsLabel.text = "- " + i;
+            SetBalanceLabelText(visualTotal);
+            
+            yield return new WaitForSeconds(0.01f);
+        }
+        yield return new WaitForSeconds(0.5f);
+
+        for (int i = 0; i <= food; i++)
+        {
+            visualTotal = salary + tips - rent - i;
+            foodCostsLabel.text = "- " + i;
+            SetBalanceLabelText(visualTotal);
+            
+            yield return new WaitForSeconds(0.01f);
+        }
+        yield return new WaitForSeconds(0.5f);
+
+        ShowContinueButton();
+    }
+
+    private void ShowContinueButton()
+    {
+        continueButton.gameObject.SetActive(true);
+    }
+
+    public void Button_ToNextScene()
+    {
         animator.Play("eosCanvas_toNextScene");
     }
 
-    public void ToNextScene()
+    public void Anim_ToNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
     private void SetBalanceLabelText(int visualTotal)
     {
-        if (visualTotal < 0) balanceLabel.text = "<color=#FF4242>-€" + visualTotal + "</color>";
-        else balanceLabel.text = "<color=#7FFF42>+€" + visualTotal + "</color>";
+        if (visualTotal < 0)
+        {
+            balanceLabel.text = "<color=#E65553>- €" + -visualTotal + "</color>";
+        }
+        else balanceLabel.text = "<color=#FFFFFF>€" + visualTotal + "</color>";
     }
 }
