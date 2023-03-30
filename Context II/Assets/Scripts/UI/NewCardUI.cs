@@ -94,6 +94,21 @@ public class NewCardUI : MonoBehaviour
         tsManager.CreateCardFromCache();
     }
 
+    public void AddSuitToCard(int suitConst)
+    {
+        switch (suitConst)
+        {
+            case 1: tsManager.AddHeartsToCard(1);
+                break;
+            case 2: tsManager.AddBulbsToCard(1);
+                break;
+            case 3: tsManager.AddFistsToCard(1);
+                break;
+            case 4: tsManager.AddCloudsToCard(1);
+                break;
+        }
+    }
+
     public void Anim_HideSuitIcons()
     {
         foreach (CardSuitIcon icon in cardSuitIcons)

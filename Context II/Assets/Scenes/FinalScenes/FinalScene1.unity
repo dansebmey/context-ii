@@ -11616,7 +11616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &549917637
 Transform:
   m_ObjectHideFlags: 0
@@ -33117,18 +33117,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1835864888}
           m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
           m_MethodName: PlayAddToDeckAnimation
@@ -33160,18 +33148,6 @@ MonoBehaviour:
         - m_Target: {fileID: 508573901}
           m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
           m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -33221,18 +33197,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1835864888}
           m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
           m_MethodName: PlayAddToDeckAnimation
@@ -33264,18 +33228,6 @@ MonoBehaviour:
         - m_Target: {fileID: 508573901}
           m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
           m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -33417,14 +33369,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33537,14 +33489,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33605,14 +33557,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33685,14 +33637,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33701,14 +33653,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33717,14 +33669,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33733,14 +33685,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33781,14 +33733,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -33885,9 +33837,9 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddHeartsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -33921,14 +33873,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34109,18 +34061,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1835864888}
           m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
           m_MethodName: PlayAddToDeckAnimation
@@ -34148,42 +34088,18 @@ MonoBehaviour:
   - guid: a2850633-c982-4a67-a690-889b6ce07050
     onExecute:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - guid: b5938857-9df8-45cd-a8b0-d39a07f84259
     onExecute:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddBulbsToCard
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - guid: 5ffbc98b-5833-4a63-8511-f3da4596e292
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddHeartsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34197,14 +34113,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34213,14 +34129,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34232,18 +34148,6 @@ MonoBehaviour:
         - m_Target: {fileID: 508573901}
           m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
           m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34317,14 +34221,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34333,14 +34237,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34352,18 +34256,6 @@ MonoBehaviour:
         - m_Target: {fileID: 508573901}
           m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
           m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34401,9 +34293,9 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddHeartsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34417,14 +34309,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddCloudsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34436,18 +34328,6 @@ MonoBehaviour:
         - m_Target: {fileID: 508573901}
           m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.SMSDialogueUI, Assembly-CSharp-firstpass
           m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: CreateCardFromCache
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34485,14 +34365,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34501,9 +34381,9 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddHeartsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34521,14 +34401,14 @@ MonoBehaviour:
     onExecute:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1634564572}
-          m_TargetAssemblyTypeName: TouristStoryManager, Assembly-CSharp
-          m_MethodName: AddFistsToCard
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
           m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -34553,6 +34433,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - guid: b53d008c-6a6e-41e5-8f38-bec0f38e21a6
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1835864888}
+          m_TargetAssemblyTypeName: NewCardUI, Assembly-CSharp
+          m_MethodName: AddSuitToCard
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - guid: c55f9851-7e61-4330-b00d-313aa4866b68
+    onExecute:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1914033524
 GameObject:
   m_ObjectHideFlags: 0
