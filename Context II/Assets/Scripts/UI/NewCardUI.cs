@@ -19,6 +19,7 @@ public class NewCardUI : MonoBehaviour
     private CardSuitIcon[] cardSuitIcons;
 
     private int suitsAdded = 0;
+    private TouristStoryManager tsManager;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class NewCardUI : MonoBehaviour
         
         cardDescription = GetComponentInChildren<TMP_Text>();
         cardSuitIcons = GetComponentsInChildren<CardSuitIcon>();
+        tsManager = FindObjectOfType<TouristStoryManager>();
     }
     
     public void ShowNewCard()
@@ -89,7 +91,7 @@ public class NewCardUI : MonoBehaviour
 
     public void PlayAddToDeckAnimation()
     {
-        // animator.Play("new_card_bringToCenter");
+        tsManager.CreateCardFromCache();
     }
 
     public void Anim_HideSuitIcons()

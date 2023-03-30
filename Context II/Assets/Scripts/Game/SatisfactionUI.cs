@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class SatisfactionUI : MonoBehaviour
     public Image barFill;
     public Image moodImage;
     private List<AdvancedCardSuitIcon> suitIcons;
+    private TMP_Text pendingTipLabel;
     
     [Header("References")]
     public Sprite moodIcon1Frustrated;
@@ -19,13 +21,13 @@ public class SatisfactionUI : MonoBehaviour
     public Sprite moodIcon4Happy;
     public Sprite moodIcon5Excited;
     public Sprite suitPlaceholderIcon;
-
-    private int suitsPlayed = 0;
-    private float previousHappiness;
+    
+    private int previousHappiness;
 
     private void Awake()
     {
         suitIcons = GetComponentsInChildren<AdvancedCardSuitIcon>().ToList();
+        pendingTipLabel = GetComponentInChildren<TMP_Text>();
     }
 
     private void Start()
@@ -33,10 +35,8 @@ public class SatisfactionUI : MonoBehaviour
         ResetUI();
     }
     
-    public void UpdateUI(Sprite suitSprite, float touristHappiness)
+    public void UpdateUI(Sprite suitSprite, int touristHappiness)
     {
-        suitsPlayed++;
-
         // move existing icons to the left
         if (suitIcons[1].image.sprite != suitPlaceholderIcon)
         {
@@ -62,24 +62,21 @@ public class SatisfactionUI : MonoBehaviour
         UpdateHappinessMeter(touristHappiness);
     }
 
-    public void UpdateHappinessMeter(float touristHappiness)
+    public void UpdateHappinessMeter(int touristHappiness)
     {
-        barFill.fillAmount = touristHappiness;
+        barFill.fillAmount = touristHappiness * 0.1f;
         previousHappiness = touristHappiness;
         // StartCoroutine(FillBar(touristHappiness));
         
-        if (touristHappiness >= 0.8f) moodImage.sprite = moodIcon5Excited;
-        else if (touristHappiness >= 0.6f) moodImage.sprite = moodIcon4Happy;
-        else if (touristHappiness >= 0.4f) moodImage.sprite = moodIcon3Content;
-        else if (touristHappiness >= 0.2f) moodImage.sprite = moodIcon2NotHappy; 
-        else moodImage.sprite = moodIcon1Frustrated;
+        if (touristHappiness >= 8) moodImage.sprite = moodIcon5Excited;
+        else if (touristHappiness >= 5) moodImage.sprite = moodIcon3Content;
+        else moodImage.sprite = moodIcon2NotHappy;
     }
 
     public void ResetUI()
     {
-        suitsPlayed = 0;
-        UpdateHappinessMeter(0.4f);
-        previousHappiness = 0.4f;
+        UpdateHappinessMeter(4);
+        previousHappiness = 4;
         
         foreach (AdvancedCardSuitIcon icon in suitIcons)
         {
@@ -99,5 +96,11 @@ public class SatisfactionUI : MonoBehaviour
             barFill.fillAmount = Mathf.Lerp(barFill.fillAmount, targetFillAmt, 0.01f);
             yield return new WaitForSeconds(0.01f);
         }
+    }
+
+    public void SetPendingTip(int tip, string colourHex)
+    {
+        // if (tip == 0) pendingTipLabel.text = "";
+        // else pendingTipLabel.text = "<color=" + colourHex + ">€" + tip + "</color>";
     }
 }

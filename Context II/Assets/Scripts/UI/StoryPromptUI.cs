@@ -52,7 +52,7 @@ public class StoryPromptUI : MonoBehaviour
         // if (subCanvas.gameObject.activeSelf) return;
         // subCanvas.gameObject.SetActive(true);
         
-        List<CardData> drawnCards = tsManager.DrawCards(3);
+        List<CardData> drawnCards = GetTouristStoryManager().DrawCards(3);
         leftCardUI.AssignCardData(drawnCards[0]);
         middleCardUI.AssignCardData(drawnCards[1]);
         rightCardUI.AssignCardData(drawnCards[2]);
@@ -64,6 +64,11 @@ public class StoryPromptUI : MonoBehaviour
         {
             touristPortraits[i].AssignTo(touristsOnBoard[i]);
         }
+    }
+
+    private TouristStoryManager GetTouristStoryManager()
+    {
+        return tsManager ? tsManager : FindObjectOfType<TouristStoryManager>();
     }
 
     private void OnCardPlayed(CardData cardData, Card.CardID cardID)

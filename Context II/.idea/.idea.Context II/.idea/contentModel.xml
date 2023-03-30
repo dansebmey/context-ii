@@ -1720,6 +1720,7 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="David_scene 1" t="Include" />
+          <e p="FinalScenes" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
@@ -1730,15 +1731,21 @@
               <e p="Local.cs" t="Include" />
               <e p="Pier.cs" t="Include" />
               <e p="Seat.cs" t="Include" />
-              <e p="StoppingPoint.cs" t="Include" />
               <e p="StoryTrigger.cs" t="Include" />
+              <e p="TeleportTrigger.cs" t="Include" />
               <e p="TouristPromptTrigger.cs" t="Include" />
+              <e p="Trigger.cs" t="Include" />
+              <e p="TutorialCanvas.cs" t="Include" />
+              <e p="TutorialTeleportTrigger.cs" t="Include" />
+              <e p="TutorialTextPanel.cs" t="Include" />
             </e>
             <e p="CameraController.cs" t="Include" />
             <e p="CinemaBarOverlay.cs" t="Include" />
+            <e p="DontDestroyOnLoad.cs" t="Include" />
             <e p="EndOfSceneCanvas.cs" t="Include" />
             <e p="SatisfactionUI.cs" t="Include" />
             <e p="Story.cs" t="Include" />
+            <e p="TeleportHandler.cs" t="Include" />
             <e p="Tourist.cs" t="Include" />
             <e p="TouristChathead.cs" t="Include" />
             <e p="TouristCrowd.cs" t="Include" />
@@ -1822,6 +1829,12 @@
         <e p="zubi_art" t="Include">
           <e p="3D_assets" t="Include" />
           <e p="3d_prefabs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="emotions" t="Include" />
+            <e p="end_screen_UI" t="Include">
+              <e p="background_animation" t="Include" />
+            </e>
+          </e>
           <e p="wind_shader" t="Include" />
         </e>
       </e>

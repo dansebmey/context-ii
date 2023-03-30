@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndOfSceneTrigger : StoppingPoint
+public class EndOfSceneTrigger : Trigger
 {
     private EndOfSceneCanvas endOfSceneCanvas;
 
@@ -16,5 +16,6 @@ public class EndOfSceneTrigger : StoppingPoint
     public override void OnBoatArrived(Boat boat)
     {
         endOfSceneCanvas.WrapUp();
+        FindObjectOfType<TouristStoryManager>().StartNewRound();
     }
 }

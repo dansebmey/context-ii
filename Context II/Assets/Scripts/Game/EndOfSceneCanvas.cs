@@ -29,6 +29,7 @@ public class EndOfSceneCanvas : MonoBehaviour
     private void Start()
     {
         continueButton.gameObject.SetActive(false);
+        continueButton.interactable = true;
     }
     
     public void WrapUp()
@@ -101,6 +102,7 @@ public class EndOfSceneCanvas : MonoBehaviour
 
     public void Button_ToNextScene()
     {
+        continueButton.interactable = false;
         animator.Play("eosCanvas_toNextScene");
     }
 

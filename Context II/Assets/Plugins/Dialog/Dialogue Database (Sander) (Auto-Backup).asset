@@ -2042,7 +2042,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Goede morgen Guido. Heb je tijd om even te praten?
+        value: Goeiemorgen, schipper. Kan ik je even spreken?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2052,7 +2052,7 @@ MonoBehaviour:
       - title: EventGuid
         value: c9304f0e-abe5-4aec-9994-3518ebfccddd
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -2113,7 +2113,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Piet Verhoogstede is het toch? Waar wil je het over hebben?
+        value: Ja hoor. Wat is er aan de hand?
         type: 0
         typeString: 
       - title: Sequence
@@ -2131,7 +2131,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 2
         destinationConversationID: 2
-        destinationDialogueID: 5
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2168,7 +2168,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Wat is er aan de hand?
+        value: Ehhh, waarover precies?
         type: 0
         typeString: 
       - title: Sequence
@@ -2196,7 +2196,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 421
+        x: 231.99994
         y: 121
         width: 160
         height: 30
@@ -2223,7 +2223,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Kijk wie we daar hebben! Het is de slijmjurk van TV.
+        value: Kijk eens wie we daar hebben! Het is de slijmjurk van TV.
         type: 0
         typeString: 
       - title: Sequence
@@ -2251,67 +2251,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 229
-        y: 124
-        width: 160
-        height: 30
-    - id: 5
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: lamp
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Ons gesprek eerder deze maand heeft me aan het denken gezet.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: EventGuid
-        value: 3130baa1-bcf4-4247-8931-1245d4f0bdb9
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 5
-        destinationConversationID: 2
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 31
-        y: 170
+        x: 477.00012
+        y: 121
         width: 160
         height: 30
     - id: 6
@@ -2337,8 +2278,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Wil je nou dat er geluisterd wordt of niet? Ik geef jullie deze kans
-          maar \xE9\xE9n keer."
+        value: "Ok\xE9... ik snap je frustratie, maar ik ben hier met een reden heen
+          gekomen."
         type: 0
         typeString: 
       - title: Sequence
@@ -2360,7 +2301,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 6
         destinationConversationID: 2
-        destinationDialogueID: 8
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2370,8 +2311,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 230.3158
-        y: 174
+        x: 478.31592
+        y: 167.99998
         width: 160
         height: 30
     - id: 7
@@ -2397,7 +2338,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Nog niks ernstigs, maar ik heb jouw hulp nodig om dat zo te houden.
+        value: Geen zorgen, ik laat je zo weer verder.
         type: 0
         typeString: 
       - title: Sequence
@@ -2419,7 +2360,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 7
         destinationConversationID: 2
-        destinationDialogueID: 8
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2429,82 +2370,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 417.49255
-        y: 173
-        width: 160
-        height: 30
-    - id: 8
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: Vuist
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Toen ik zag hoeveel ontevredenheid er was bij die parapade, realiseerde
-          ik de ernst van deze situatie. Hoe zei jij dat ook al weer? 'Als we niks
-          doen, dan loopt het uit de hand.' Daarom probeer ik binnen mijn macht nog
-          wat veranderingen door te voeren.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: EventGuid
-        value: 08dbcda7-207b-44a8-b1b1-e794f1ecec41
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 8
-        destinationConversationID: 2
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 8
-        destinationConversationID: 2
-        destinationDialogueID: 10
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 8
-        destinationConversationID: 2
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 223.01495
-        y: 227.53735
+        x: 232.49252
+        y: 168
         width: 160
         height: 30
     - id: 9
@@ -2530,7 +2397,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Waar heb je mijn hulp dan voor nodig?
+        value: Denk je dat dat nu nog zin heeft?
         type: 0
         typeString: 
       - title: Sequence
@@ -2558,8 +2425,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 32
-        y: 289
+        x: 44.306717
+        y: 554.47943
         width: 160
         height: 30
     - id: 10
@@ -2585,7 +2452,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Wat voor veranderingen heb je in gedachten?
+        value: "Ok\xE9, dat kan ik wel doen."
         type: 0
         typeString: 
       - title: Sequence
@@ -2613,8 +2480,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 226
-        y: 285
+        x: 239.37053
+        y: 551.5432
         width: 160
         height: 30
     - id: 11
@@ -2640,7 +2507,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Jij wilt dat ik de mensen gerust stel in de tussentijd.
+        value: Verdien ik daar ook wat aan?
         type: 0
         typeString: 
       - title: Sequence
@@ -2668,8 +2535,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 413
-        y: 284
+        x: 425.30673
+        y: 550.5432
         width: 160
         height: 30
     - id: 12
@@ -2695,8 +2562,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Dat zou fijn zijn. Als je dan regelmatig bij mij meldt, dan kunnen
-          we deze situatie met zijn allen vredig oplossen.
+        value: ...
         type: 0
         typeString: 
       - title: Sequence
@@ -2718,19 +2584,13 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 12
         destinationConversationID: 2
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 12
-        destinationConversationID: 2
-        destinationDialogueID: 15
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 12
-        destinationConversationID: 2
         destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      - originConversationID: 2
+        originDialogueID: 12
+        destinationConversationID: 2
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2740,8 +2600,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 413
-        y: 334
+        x: 425.30673
+        y: 600.5432
         width: 160
         height: 30
     - id: 13
@@ -2767,8 +2627,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Daar heb ik houw hulp bij nodig. Kan jij rondvragen naar wat voor
-          idee\xEBn de burgers hebben? Dan kijk ik of dat nog mogelijk is."
+        value: Oh, heel erg bedankt!
         type: 0
         typeString: 
       - title: Sequence
@@ -2790,19 +2649,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 13
         destinationConversationID: 2
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 13
-        destinationConversationID: 2
-        destinationDialogueID: 15
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 13
-        destinationConversationID: 2
-        destinationDialogueID: 17
+        destinationDialogueID: 31
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2812,8 +2659,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 226
-        y: 335
+        x: 238.3067
+        y: 605.07263
         width: 160
         height: 30
     - id: 14
@@ -2839,8 +2686,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: De burgers luisteren naar jou. Als je nou hun meningen verzameld en
-          die bij mij rapporteert, dan kijk ik of ik daar iets mee kan doen.
+        value: Het zal onmogelijk zijn om iedereen blij te maken, maar ik zal mijn
+          best doen om de klap zo veel mogelijk te verzachten.
         type: 0
         typeString: 
       - title: Sequence
@@ -2862,19 +2709,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 14
         destinationConversationID: 2
-        destinationDialogueID: 15
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 14
-        destinationConversationID: 2
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
-      - originConversationID: 2
-        originDialogueID: 14
-        destinationConversationID: 2
-        destinationDialogueID: 17
+        destinationDialogueID: 28
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2884,63 +2719,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 32
-        y: 339
-        width: 160
-        height: 30
-    - id: 15
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Mensen willen voornamelijk gehoord voelen.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 15
-        destinationConversationID: 2
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 14.926834
-        y: 447.53656
+        x: 44.306717
+        y: 606.71967
         width: 160
         height: 30
     - id: 16
@@ -2966,173 +2746,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: We kunnen onmogelijk iedereen tevreden houden.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 16
-        destinationConversationID: 2
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 215.02437
-        y: 443.53662
-        width: 160
-        height: 30
-    - id: 17
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Het is waarschijnlijk al te laat.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 17
-        destinationConversationID: 2
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 417.87805
-        y: 446.19513
-        width: 160
-        height: 30
-    - id: 18
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Je hebt gelijk... Laten we het toch proberen. Ik spreek je de volgende
-          keer als ik je zie langs varen. Hopelijk met goed nieuws. Tot gauw.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 18
-        destinationConversationID: 2
-        destinationDialogueID: 19
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 215.02437
-        y: 532.88086
-        width: 160
-        height: 30
-    - id: 19
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Tot gauw!
+        value: Goed, zie ik je dan.
         type: 0
         typeString: 
       - title: Sequence
@@ -3140,7 +2754,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: 5ffecaa4-da77-4ee6-84d7-a58ecdbd0ab5
+        value: 7bf503ef-aae1-4510-a2c3-7148a7133b2d
         type: 0
         typeString: 
       conversationID: 2
@@ -3158,13 +2772,652 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 213.38503
-        y: 582.88086
+        x: 230.86053
+        y: 841.8444
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Vertel.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 20
+        destinationConversationID: 2
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 478.23718
+        y: 221.67014
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Mijn naam is Piet Verhoogstede. Ik ben de projectontwikkelaar van
+          het windmolenpark dat hier gebouwd wordt.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: b5ccfd21-28a3-4962-9778-98523868303f
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 21
+        destinationConversationID: 2
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 214.00002
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: De opkomst bij de demonstratie laatst heeft me aan het denken gezet.
+          Ik besef me nu hoe gevoelig de situatie bij de bewoners van Dwarsendam
+          ligt.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 66016786-a29d-4f18-be04-b18567e7eb41
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 22
+        destinationConversationID: 2
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 28.771255
+        y: 264.09283
+        width: 160
+        height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nog niks, maar dat wil ik graag zo houden.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 4591eac6-a857-41e9-ad2c-ce28cd1b7304
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 23
+        destinationConversationID: 2
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 26.999977
+        y: 166.99998
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Ok\xE9, maar waar heb je mij dan voor nodig?"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 24
+        destinationConversationID: 2
+        destinationDialogueID: 26
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 239.21652
+        y: 266.67014
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: De bewoners vertrouwen me niet. Als ik ze benader lopen de emoties
+          meteen hoog op, dus een gesprek met ze aangaan heeft voor mij geen zin.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 26
+        destinationConversationID: 2
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 239.36206
+        y: 320.1328
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Ik zou je willen vragen of jij de bezwaren en idee\xEBn van buurtbewoners
+          kan verzamelen. Misschien kan ik er nog wat mee."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: bb8f0307-a5e9-4eff-a4e1-e7aa7684ca1c
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 27
+        destinationConversationID: 2
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 2
+        originDialogueID: 27
+        destinationConversationID: 2
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      - originConversationID: 2
+        originDialogueID: 27
+        destinationConversationID: 2
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 238.25137
+        y: 377.53455
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nou, vooruit dan.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 28
+        destinationConversationID: 2
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 43.13025
+        y: 713.19025
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Dan kom ik volgende week nog een keer langs, goed?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 29
+        destinationConversationID: 2
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 172.42432
+        y: 771.54333
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Wil je nou dat we naar een oplossing toe werken of niet?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 30
+        destinationConversationID: 2
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 456.71057
+        y: 720.0352
+        width: 160
+        height: 30
+    - id: 31
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Geloof me, ik wil net zo graag dat deze situatie niet verder uit de
+          hand loopt.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 31
+        destinationConversationID: 2
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 240.65964
+        y: 652.71967
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 14.395882}
-    canvasZoom: 0.7600001
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.76
   - id: 3
     fields:
     - title: Title
@@ -3481,10 +3734,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Oh dat is jammer. Ik had gehoopt iets in de volgende meeting mee
-          te kunnen nemen
-
-'
+        value: Oh dat is jammer. Ik had gehoopt iets in de volgende vergadering mee
+          te kunnen nemen.
         type: 0
         typeString: 
       - title: Sequence
@@ -3636,8 +3887,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1050.6046
-        y: 240.80821
+        x: 1055.0823
+        y: 242.30075
         width: 160
         height: 30
     - id: 7
@@ -3726,8 +3977,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Ik zal een conferentie plannen in het stadhuis. Dan kunnen we met
-          zijn allen overleggen over de windmolens. Jij bent ook van harte welkom.
+        value: 'Hmm... misschien kan ik een conferentie plannen in het stadhuis.
+          Dan kunnen we met zijn allen overleggen over de windmolens.
 
 '
         type: 0
@@ -3751,13 +4002,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 8
         destinationConversationID: 3
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 8
-        destinationConversationID: 3
-        destinationDialogueID: 10
+        destinationDialogueID: 29
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3768,7 +4013,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1051.9745
-        y: 290.80823
+        y: 289.43835
         width: 160
         height: 30
     - id: 9
@@ -3794,9 +4039,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Bedankt, maar ik heb het erg druk. Misschien de volgende keer.
-
-'
+        value: Misschien, hangt nog even van mijn rooster af.
         type: 0
         typeString: 
       - title: Sequence
@@ -3824,8 +4067,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 946.495
-        y: 390.1233
+        x: 951.90533
+        y: 815.0723
         width: 160
         height: 30
     - id: 10
@@ -3851,9 +4094,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Ik zal mijn best doen erbij te zijn.
-
-'
+        value: Ik zal mijn best doen.
         type: 0
         typeString: 
       - title: Sequence
@@ -3881,8 +4122,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1151.9745
-        y: 390.1233
+        x: 1154.6449
+        y: 856.1683
         width: 160
         height: 30
     - id: 11
@@ -3908,7 +4149,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Geen probleem.
+        value: 'Geen probleem. We zien wel.
 
 '
         type: 0
@@ -3928,7 +4169,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 11
         destinationConversationID: 3
-        destinationDialogueID: 28
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3938,8 +4179,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 947.8108
-        y: 440.1233
+        x: 953.2211
+        y: 865.0723
         width: 160
         height: 30
     - id: 12
@@ -3965,9 +4206,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Uitstekend. Een bekend gezicht zal goed doen. Tot gauw.
-
-'
+        value: Mooi! Een bekend gezicht zal goed doen. Tot dan.
         type: 0
         typeString: 
       - title: Sequence
@@ -3999,8 +4238,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1151.9745
-        y: 440.1233
+        x: 1147.7955
+        y: 959.59296
         width: 160
         height: 30
     - id: 13
@@ -4083,8 +4322,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Ja soms vliegen er vogels tegen aan. Maar zolang de sterftecijfers
-          onder de toegestane grens blijft zullen de vogels het overleven. \r\n"
+        value: Tja, soms vliegen er wat vogels tegenaan.
         type: 0
         typeString: 
       - title: Sequence
@@ -4106,7 +4344,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 14
         destinationConversationID: 3
-        destinationDialogueID: 15
+        destinationDialogueID: 34
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4118,76 +4356,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 192.93047
         y: 230.28218
-        width: 160
-        height: 30
-    - id: 15
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 'De impact is ernstiger dan gedacht. Mark zegt dat de windmolens het
-          ecosysteem uit balans gooit.  Het is gewoon tragisch.
-
-'
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 15
-        destinationConversationID: 3
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 15
-        destinationConversationID: 3
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 15
-        destinationConversationID: 3
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 189.7965
-        y: 278.46405
         width: 160
         height: 30
     - id: 16
@@ -4213,7 +4381,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Het gaat echter alleen om de laatste windmolen. Die komt te dicht
+        value: 'Het gaat trouwens alleen om die laatste windmolen. Die komt te dicht
           bij het natuurgebied te staan.
 
 '
@@ -4244,8 +4412,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 194.24628
-        y: 332.1004
+        x: 202.39612
+        y: 680.33716
         width: 160
         height: 30
     - id: 17
@@ -4271,7 +4439,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Hoe dan ook. Denk daar maar over na.
+        value: 'Nou ja, kijk maar.
 
 '
         type: 0
@@ -4301,8 +4469,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 386.16003
-        y: 333.91858
+        x: 394.30988
+        y: 682.15533
         width: 160
         height: 30
     - id: 18
@@ -4328,10 +4496,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Bovendien, de vogels zien de wieken niet aankomen. Misschien kan
-          je de wieken opvallender maken voor de vogels?
-
-'
+        value: De vogels zien de wieken dus niet aankomen. Misschien kan je de wieken
+          opvallender maken voor de vogels?
         type: 0
         typeString: 
       - title: Sequence
@@ -4360,8 +4526,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 15.473686
-        y: 330.28223
+        x: 23.623566
+        y: 678.519
         width: 160
         height: 30
     - id: 19
@@ -4387,10 +4553,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Je bedoelt de wieken bijvoorbeeld zwart verven? Dat is een simpele
+        value: Je bedoelt de wieken bijvoorbeeld zwart verven? Dat is een simpele
           oplossing. Goed idee.
-
-'
         type: 0
         typeString: 
       - title: Sequence
@@ -4428,8 +4592,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 16.789474
-        y: 447.55493
+        x: 24.939354
+        y: 795.7917
         width: 160
         height: 30
     - id: 20
@@ -4455,8 +4619,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Dus als de laatste windmolen verder weg komt te staan dan kunnen
-          de vogels rustig verder leven? Daar kan ik wel iets mee.
+        value: 'Hmm, de laatste windmolen iets verplaatsen... ik zal kijken wat ik
+          kan doen.
 
 '
         type: 0
@@ -4496,8 +4660,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 201.51901
-        y: 499.24326
+        x: 209.66885
+        y: 847.48004
         width: 160
         height: 30
     - id: 21
@@ -4523,9 +4687,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Zal ik zeker doen. Vaarwel Guido.
-
-'
+        value: "Ik zal je idee\xEBn bij mijn supervisor neerleggen. Je hoort nog
+          van me."
         type: 0
         typeString: 
       - title: Sequence
@@ -4553,8 +4716,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 384.34183
-        y: 442.10037
+        x: 392.4917
+        y: 790.3371
         width: 160
         height: 30
     - id: 22
@@ -4637,7 +4800,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Vreemd. Die windmolens die wij bouwen zijn keurig onder de wettelijke
+        value: 'Vreemd. Die windmolens die wij bouwen zitten keurig onder de wettelijke
           grens van 47 decibel.
 
 '
@@ -4659,12 +4822,6 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 23
-        destinationConversationID: 3
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
       - originConversationID: 3
         originDialogueID: 23
         destinationConversationID: 3
@@ -4711,10 +4868,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: '47 decibel is niet laag genoeg. Is er een manier om ze nog stiller
-          te maken?
-
-'
+        value: 47 decibel is niet laag genoeg. Jaap heeft al de hele week last van
+          slapeloze nachten.
         type: 0
         typeString: 
       - title: Sequence
@@ -4732,7 +4887,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 24
         destinationConversationID: 3
-        destinationDialogueID: 25
+        destinationDialogueID: 38
         isConnector: 0
         priority: 2
       conditionsString: Variable["Can_talk_about_Decibels"] == true
@@ -4742,8 +4897,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 567.4613
-        y: 332.4587
+        x: 598.6603
+        y: 504.44818
         width: 160
         height: 30
     - id: 25
@@ -4769,8 +4924,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hmm\u2026 Misschien kunnen er nog geluidsdempers ge\xEFnstalleerd
-          worden op de vleugels. Ik zal kijken wat ik kan doen.\r\n"
+        value: "Hmm\u2026 misschien is het de moeite waard om daar nog eens onderzoek
+          te laten doen. Ik had geen idee dat het zo'n grote impact had."
         type: 0
         typeString: 
       - title: Sequence
@@ -4808,8 +4963,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 565.80035
-        y: 488.0239
+        x: 599.3235
+        y: 860.1413
         width: 160
         height: 30
     - id: 26
@@ -4865,8 +5020,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 751.0679
-        y: 334.098
+        x: 832.075
+        y: 630.9061
         width: 160
         height: 30
     - id: 27
@@ -4929,8 +5084,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 753.69946
-        y: 441.99274
+        x: 763.1652
+        y: 790.22943
         width: 160
         height: 30
     - id: 28
@@ -4956,7 +5111,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Hoi hoi.
+        value: "Ok\xE9, doei!"
         type: 0
         typeString: 
       - title: Sequence
@@ -4982,13 +5137,598 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 380.39444
-        y: 609.20557
+        x: 388.5443
+        y: 957.4423
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ben jij er dan ook bij?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 29
+        destinationConversationID: 3
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 29
+        destinationConversationID: 3
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1060.1244
+        y: 689.045
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: En anders kijken we nog wel even.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 30
+        destinationConversationID: 3
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 953.2211
+        y: 915.0723
+        width: 160
+        height: 30
+    - id: 31
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hmm, als jij het zegt.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 31
+        destinationConversationID: 3
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 31
+        destinationConversationID: 3
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 58.367966
+        y: 327.0355
+        width: 160
+        height: 30
+    - id: 32
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Zo kun je toch niet praten over levende wezens? Wat is dat nou weer
+          voor een instelling?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 32
+        destinationConversationID: 3
+        destinationDialogueID: 33
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 421.225
+        y: 349.8926
+        width: 160
+        height: 30
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Het hele ecosysteem in deze omgeving raakt uit balans.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 33
+        destinationConversationID: 3
+        destinationDialogueID: 35
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 421.225
+        y: 404.1783
+        width: 160
+        height: 30
+    - id: 34
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Maar zolang de sterftecijfers onder de toegestane grens blijven, zal
+          de vogelsoort het overleven.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 317.2162
+        y: 287.42505
+        width: 160
+        height: 30
+    - id: 35
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ...
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: bd6d53b9-1ef8-4cd0-989e-f24248445725
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 35
+        destinationConversationID: 3
+        destinationDialogueID: 36
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 421.225
+        y: 455.6069
+        width: 160
+        height: 30
+    - id: 36
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ik snap je punt, maar laten we het daar nu niet over hebben.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 04675712-23e5-43e2-a3b3-05779fb3ff58
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 36
+        destinationConversationID: 3
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 36
+        destinationConversationID: 3
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 421.225
+        y: 505.6069
+        width: 160
+        height: 30
+    - id: 37
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Is er niet een manier om ze nog stiller te maken?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 37
+        destinationConversationID: 3
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 603.33264
+        y: 592.9075
+        width: 160
+        height: 30
+    - id: 38
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 6
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hij slaapt nu met de ventilator aan om het geluid te maskeren, maar
+          dat is toch niet rendabel?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 38
+        destinationConversationID: 3
+        destinationDialogueID: 37
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 599.38525
+        y: 548.1706
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 50}
-    canvasZoom: 0.7600001
+    canvasScrollPosition: {x: 0, y: 224.89374}
+    canvasZoom: 0.6700002
   - id: 4
     fields:
     - title: Title
@@ -5058,7 +5798,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hoi Jaap, Alles goed? \r\n"
+        value: 
         type: 0
         typeString: 
       - title: Sequence
@@ -5080,7 +5820,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 0
         destinationConversationID: 4
-        destinationDialogueID: 1
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5090,8 +5830,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 349
-        y: 16
+        x: 344.45453
+        y: 1
         width: 160
         height: 30
     - id: 1
@@ -5117,8 +5857,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Kan beter. Ik heb sinds die nieuwe windmolens er staan niet goed
-          kunnen slapen. \r\n"
+        value: "M\xF4ge Guido! Mwoah, kan beter. Ik kan al dagen niet slapen door
+          die verdomde windmolen.\n"
         type: 0
         typeString: 
       - title: Sequence
@@ -5158,8 +5898,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 353
-        y: 69
+        x: 350.7273
+        y: 115.59091
         width: 160
         height: 30
     - id: 2
@@ -5185,7 +5925,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Is die ruzie zo erg opgelopen?
+        value: 'Oh, waardoor dan precies?
 
 '
         type: 0
@@ -5215,68 +5955,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 142
-        y: 130
+        x: 139.7273
+        y: 176.59091
         width: 160
         height: 30
     - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 5
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 'Oh, waar komt dat door?
-
-'
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 3
-        destinationConversationID: 4
-        destinationDialogueID: 7
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 351
-        y: 129
-        width: 160
-        height: 30
-    - id: 5
       fields:
       - title: Title
         value: 
@@ -5317,6 +6000,61 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 4
+        originDialogueID: 3
+        destinationConversationID: 4
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 348.7273
+        y: 175.59091
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Heb je er spijt van?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
         originDialogueID: 5
         destinationConversationID: 4
         destinationDialogueID: 8
@@ -5329,8 +6067,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 553.7761
-        y: 128.02985
+        x: 551.50336
+        y: 174.62076
         width: 160
         height: 30
     - id: 6
@@ -5356,10 +6094,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Nee, dat is het niet. Die windmolens maken bromtonen. Je hoort het
-          niet altijd bewust, maar je ervaart het altijd.
-
-'
+        value: "Nou, je hoort het nu misschien niet, maar 's nachts maken ze zo'n
+          vervelend bromgeluid... dat gaat door merg en been. Echt niet te doen.\r"
         type: 0
         typeString: 
       - title: Sequence
@@ -5387,13 +6123,13 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 6
         destinationConversationID: 4
-        destinationDialogueID: 10
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       - originConversationID: 4
         originDialogueID: 6
         destinationConversationID: 4
-        destinationDialogueID: 9
+        destinationDialogueID: 10
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5403,8 +6139,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 142
-        y: 180
+        x: 139.7273
+        y: 226.59091
         width: 160
         height: 30
     - id: 7
@@ -5430,9 +6166,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Dat laagfrequente geluid. Je hoort ze nu niet. Maar \u2018s nachts
-          zijn ze ondraaglijk. Dat geluid verspreidt zich door de grond en door de
-          muren.\r\n"
+        value: 'Hahaha. Nee, maar ze maken constant lawaai. Ik doe geen oog dicht! '
         type: 0
         typeString: 
       - title: Sequence
@@ -5454,12 +6188,6 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 7
         destinationConversationID: 4
-        destinationDialogueID: 10
-        isConnector: 0
-        priority: 2
-      - originConversationID: 4
-        originDialogueID: 7
-        destinationConversationID: 4
         destinationDialogueID: 9
         isConnector: 0
         priority: 2
@@ -5469,6 +6197,12 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
+      - originConversationID: 4
+        originDialogueID: 7
+        destinationConversationID: 4
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -5476,8 +6210,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 351
-        y: 179
+        x: 348.7273
+        y: 225.59091
         width: 160
         height: 30
     - id: 8
@@ -5503,8 +6237,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hahaha. Nee, maar ze maken constant lawaai. Ik doe geen oog dicht!
-          \r\n"
+        value: Spijt, spijt... da's nog een beetje vroeg om te zeggen.
         type: 0
         typeString: 
       - title: Sequence
@@ -5526,19 +6259,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 8
         destinationConversationID: 4
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 4
-        originDialogueID: 8
-        destinationConversationID: 4
-        destinationDialogueID: 10
-        isConnector: 0
-        priority: 2
-      - originConversationID: 4
-        originDialogueID: 8
-        destinationConversationID: 4
-        destinationDialogueID: 11
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5548,8 +6269,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 553.7761
-        y: 179.1662
+        x: 553.56525
+        y: 226.78802
         width: 160
         height: 30
     - id: 9
@@ -5605,8 +6326,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 556.76117
-        y: 259.3731
+        x: 555.3821
+        y: 396.16785
         width: 160
         height: 30
     - id: 10
@@ -5632,7 +6353,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Wat zou je anders willen zien aan die windmolens.
+        value: 'Heb je nog een idee
 
 '
         type: 0
@@ -5662,8 +6383,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 349.50745
-        y: 258.85077
+        x: 348.12842
+        y: 395.6455
         width: 160
         height: 30
     - id: 11
@@ -5717,8 +6438,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 144.98506
-        y: 259.85077
+        x: 143.60608
+        y: 396.6455
         width: 160
         height: 30
     - id: 12
@@ -5744,8 +6465,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Weg met die windmolen voor mijn raam. Ik snap die energietransitie
-          wel, maar ze zijn blind voor geluidsoverlast. \r\n"
+        value: Ja weet je, het liefst gewoon helemaal geen windmolens natuurlijk!
+          Ik snap het wel, goed voor het milieu enzo, maar denk ook eens aan de bevolking
+          zou ik zeggen.
         type: 0
         typeString: 
       - title: Sequence
@@ -5767,7 +6489,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 12
         destinationConversationID: 4
-        destinationDialogueID: 15
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5777,8 +6499,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 349.50745
-        y: 308.85077
+        x: 348.12842
+        y: 445.6455
         width: 160
         height: 30
     - id: 13
@@ -5804,8 +6526,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Ja, ik slaap nu altijd met een draaiende ventilator in mijn slaapkamer.
-          Dat maskeert het geluid. Maar dit is geen manier van leven.
+        value: 'Ja, we slapen nu met een draaiende ventilator aan. Dat maskeert het
+          geluid een beetje. Maar dit is geen manier van leven.
 
 '
         type: 0
@@ -5829,7 +6551,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 13
         destinationConversationID: 4
-        destinationDialogueID: 15
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5839,8 +6561,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 144.98506
-        y: 309.85077
+        x: 143.60608
+        y: 446.6455
         width: 160
         height: 30
     - id: 14
@@ -5866,8 +6588,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Nou, mijn dochter heeft al gezondheidsproblemen. Nu krijgt ze ook
-          nog een achterstand op school. \r\n"
+        value: Nou, mijn dochter heeft al gezondheidsproblemen, en nu krijgt ze ook
+          nog eens een achterstand op school.
         type: 0
         typeString: 
       - title: Sequence
@@ -5889,7 +6611,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 14
         destinationConversationID: 4
-        destinationDialogueID: 15
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5899,8 +6621,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 560.25116
-        y: 310.15982
+        x: 558.8721
+        y: 446.9546
         width: 160
         height: 30
     - id: 15
@@ -5926,8 +6648,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Ik begrijp het volkomen. Ik zal kijken of ik daar een oplossing voor
-          kan bedenken. \r\n"
+        value: We gaan het meemaken. Ik moet er nu vandoor!
         type: 0
         typeString: 
       - title: Sequence
@@ -5955,8 +6676,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 348.01492
-        y: 376.76123
+        x: 142.5122
+        y: 642.4873
         width: 160
         height: 30
     - id: 16
@@ -5982,9 +6703,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Dat zou ik enorm waarderen. Bedankt Guido!
-
-'
+        value: "Ok\xE9 Guido, ik spreek je later ja?"
         type: 0
         typeString: 
       - title: Sequence
@@ -6016,8 +6735,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 346.52237
-        y: 435.71643
+        x: 140.78473
+        y: 693.8474
         width: 160
         height: 30
     - id: 17
@@ -6043,7 +6762,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Je hoort nog van me.
+        value: Hoi hoi!
         type: 0
         typeString: 
       - title: Sequence
@@ -6069,13 +6788,542 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 346.52237
-        y: 485.71643
+        x: 341.48453
+        y: 760.2811
+        width: 160
+        height: 30
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ha Jaap, hoe gaat ie?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 18
+        destinationConversationID: 4
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 347.86362
+        y: 60.09091
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Met die 40 ton per maand houd ik wel een mooi zakcentje over, maar
+          de overlast is niet te ontkennen.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 08efb635-0815-454e-a3f2-cf01b4bc0e5c
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 19
+        destinationConversationID: 4
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 19
+        destinationConversationID: 4
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 19
+        destinationConversationID: 4
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 550.6762
+        y: 276.69864
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nu ben ik natuurlijk wel een beetje hypocriet hoor, met zo'n ding
+          op mijn erf. Dat nemen de buren me ook best kwalijk.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 21
+        destinationConversationID: 4
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 348.1284
+        y: 500.80017
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Het zou fijn zijn als ze het bij de molen zelf een beetje kunnen dempen.
+          Even aan het volumeknopje draaien, weet je wel?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 24d91626-2929-4e15-b0fb-fb625654e5fe
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 22
+        destinationConversationID: 4
+        destinationDialogueID: 23
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 143.60608
+        y: 496.6455
+        width: 160
+        height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Nou, die projectplanner kwam dus laatst naar me toe, en vroeg me
+          of ik idee\xEBn wilde verzamelen."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 23
+        destinationConversationID: 4
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 143.60608
+        y: 546.6455
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Wie, die Verhoogstede? Laat me niet lachen. Die gaat echt voor geen
+          meter rekening met ons houden.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 0920139b-2581-49f5-b2c2-ef6e363ce33b
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 24
+        destinationConversationID: 4
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 143.60608
+        y: 595.50916
+        width: 160
+        height: 30
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Ai, da's vervelend.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 25
+        destinationConversationID: 4
+        destinationDialogueID: 26
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 558.8721
+        y: 496.9546
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Tja...
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 26
+        destinationConversationID: 4
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 558.8721
+        y: 546.9546
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nou, ik ga je niet langer lastig vallen. Denk dat je passagiers wel
+          wat mooiere uitzichten te wachten staat!
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 27
+        destinationConversationID: 4
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 506.2948
+        y: 607.2638
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 27.272736}
-    canvasZoom: 0.88
+    canvasScrollPosition: {x: 8.51062, y: 212.76608}
+    canvasZoom: 0.9399998
   - id: 5
     fields:
     - title: Title
@@ -7209,8 +8457,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 3.9844818, y: 37.54718}
-    canvasZoom: 0.7600002
+    canvasScrollPosition: {x: 92.65713, y: 33.413532}
+    canvasZoom: 0.9100001
   - id: 6
     fields:
     - title: Title
@@ -7280,7 +8528,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hoi Mark, Nog wat mooie vogels gespot van de week? \r\n\n"
+        value: 
         type: 0
         typeString: 
       - title: Sequence
@@ -7302,7 +8550,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 0
         destinationConversationID: 6
-        destinationDialogueID: 1
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -7339,8 +8587,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Zeg dat wel. Ik zag gisteren avond fantastische spreeuwenwolken.
-          Echt spectaculair!
+        value: 'Oh, zeker weten. Ik zag gisteravond zulke mooie spreeuwenwolken,
+          joh. Echt spectaculair!
 
 '
         type: 0
@@ -7386,8 +8634,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 313.69437
-        y: 70
+        x: 315.41843
+        y: 142.41377
         width: 160
         height: 30
     - id: 2
@@ -7441,8 +8689,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 46.714386
-        y: 119.99997
+        x: 48.438522
+        y: 192.41374
         width: 160
         height: 30
     - id: 3
@@ -7496,8 +8744,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 311
-        y: 120
+        x: 312.7241
+        y: 192.41377
         width: 160
         height: 30
     - id: 4
@@ -7554,8 +8802,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 559.57135
-        y: 120
+        x: 561.2954
+        y: 192.41377
         width: 160
         height: 30
     - id: 5
@@ -7606,7 +8854,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 5
         destinationConversationID: 6
-        destinationDialogueID: 7
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -7616,8 +8864,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 46.714386
-        y: 169.99997
+        x: 48.438522
+        y: 242.41374
         width: 160
         height: 30
     - id: 6
@@ -7644,7 +8892,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: 'Ja dat hadden ze prachtig gevonden. Maar ze kunnen nu een buizerd
-          zien jagen. Ik zag haar net nog voorbij vliegen. Oh daar gaat ze!
+          zien jagen. Ik zag haar net nog voorbij vliegen.
 
 '
         type: 0
@@ -7668,7 +8916,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 6
         destinationConversationID: 6
-        destinationDialogueID: 7
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -7678,8 +8926,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 559.57135
-        y: 170
+        x: 561.2954
+        y: 242.41377
         width: 160
         height: 30
     - id: 7
@@ -7705,9 +8953,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Fantastische wezens, niet waar? Ik maak me alleen zorgen dat ze straks
-          worden verdreven door die windmolens. De laatste die ze gaan bouwen staat
-          praktisch in hun leefgebied. \r\n"
+        value: 'Fantastische wezens, nietwaar?
+
+'
         type: 0
         typeString: 
       - title: Sequence
@@ -7725,19 +8973,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 7
         destinationConversationID: 6
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      - originConversationID: 6
-        originDialogueID: 7
-        destinationConversationID: 6
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 6
-        originDialogueID: 7
-        destinationConversationID: 6
-        destinationDialogueID: 10
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -7747,8 +8983,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 306.71426
-        y: 235.71426
+        x: 305.9067
+        y: 305.5964
         width: 160
         height: 30
     - id: 8
@@ -7774,7 +9010,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Oh dat is vreselijk!
+        value: 'Oh, dat is vreselijk!
 
 '
         type: 0
@@ -7804,8 +9040,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 42.428642
-        y: 285.71426
+        x: 42.740715
+        y: 561.97906
         width: 160
         height: 30
     - id: 9
@@ -7831,9 +9067,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Maar als de aarde opwarmt dan raken ze ook hun leefgebied kwijt.
-
-'
+        value: Maar als de aarde opwarmt, dan raken ze ook hun leefgebied kwijt,
+          toch?
         type: 0
         typeString: 
       - title: Sequence
@@ -7861,8 +9096,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 306.71426
-        y: 285.71426
+        x: 307.02625
+        y: 561.97906
         width: 160
         height: 30
     - id: 10
@@ -7918,8 +9153,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 552.42847
-        y: 288.5714
+        x: 552.7405
+        y: 564.8362
         width: 160
         height: 30
     - id: 11
@@ -7964,12 +9199,6 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 11
         destinationConversationID: 6
-        destinationDialogueID: 15
-        isConnector: 0
-        priority: 2
-      - originConversationID: 6
-        originDialogueID: 11
-        destinationConversationID: 6
         destinationDialogueID: 14
         isConnector: 0
         priority: 2
@@ -7980,8 +9209,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 45.168365
-        y: 335.71426
+        x: 45.48044
+        y: 611.97906
         width: 160
         height: 30
     - id: 12
@@ -8007,14 +9236,18 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Dat is waar. Maar een significante hap uit de populatie kan al de
-          hele vogelsoort bedreigen.
+        value: 'Ja, dat klopt ook wel. Maar zo''n grote hap uit de populatie kan
+          al de hele vogelsoort bedreigen.
 
 '
         type: 0
         typeString: 
       - title: Sequence
         value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: a2850633-c982-4a67-a690-889b6ce07050
         type: 0
         typeString: 
       conversationID: 6
@@ -8028,13 +9261,13 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 12
         destinationConversationID: 6
-        destinationDialogueID: 14
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
       - originConversationID: 6
         originDialogueID: 12
         destinationConversationID: 6
-        destinationDialogueID: 15
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -8044,8 +9277,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 306.71426
-        y: 335.71426
+        x: 308.29205
+        y: 614.5107
         width: 160
         height: 30
     - id: 13
@@ -8072,11 +9305,15 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: "Niet bepaald. Maar in slecht weer of \u2018s nachts dan vliegen ze
-          tegen die propellers aan. met alle gevolgen van dien. \r\n"
+          tegen die propellers aan, met alle gevolgen van dien. \r\n"
         type: 0
         typeString: 
       - title: Sequence
         value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: b5938857-9df8-45cd-a8b0-d39a07f84259
         type: 0
         typeString: 
       conversationID: 6
@@ -8106,8 +9343,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 552.42847
-        y: 338.5714
+        x: 552.7405
+        y: 614.8362
         width: 160
         height: 30
     - id: 14
@@ -8133,8 +9370,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Dat kunnen we dus niet laten gebeuren. We moeten benadrukken hoe
-          belangrijk die vogels zijn voor de biodiversiteit. \r\n"
+        value: Dat kunnen we dus niet laten gebeuren. We moeten benadrukken hoe belangrijk
+          die vogels zijn voor onze biodiversiteit.
         type: 0
         typeString: 
       - title: Sequence
@@ -8162,8 +9399,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 155.44852
-        y: 492.61075
+        x: 155.76059
+        y: 767.6097
         width: 160
         height: 30
     - id: 15
@@ -8189,9 +9426,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Het is enkel maar \xE9\xE9n windmolen. En die staat er nog niet.
-          Misschien kan ik ze overtuigen die windmolen ergens anders te plaatsen.
-          \r\n"
+        value: 'Misschien kan ik de projectplanner overtuigen om die ene windmolen
+          te verplaatsen. Die staat er tenslotte nog niet.
+
+'
         type: 0
         typeString: 
       - title: Sequence
@@ -8219,8 +9457,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 451.54175
-        y: 497.78317
+        x: 451.85376
+        y: 774.04785
         width: 160
         height: 30
     - id: 16
@@ -8246,10 +9484,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Daar ben ik helemaal mee eens. Ik doe mee! Laat maar weten of je
-          mijn hulp nodig hebt. Joe!
-
-'
+        value: Daar ben ik het helemaal met je eens.
         type: 0
         typeString: 
       - title: Sequence
@@ -8274,6 +9509,12 @@ MonoBehaviour:
         destinationDialogueID: 18
         isConnector: 0
         priority: 2
+      - originConversationID: 6
+        originDialogueID: 16
+        destinationConversationID: 6
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8281,8 +9522,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 158.08421
-        y: 542.6107
+        x: 159.71208
+        y: 818.87537
         width: 160
         height: 30
     - id: 17
@@ -8308,9 +9549,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Oh dat zou geweldig zijn! De vogels zullen je zeker dankbaar zijn.
-
-'
+        value: Dat zou mooi zijn, maar denk je dat die druiloor goede bedoelingen
+          met ons heeft, dan?
         type: 0
         typeString: 
       - title: Sequence
@@ -8332,7 +9572,13 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 17
         destinationConversationID: 6
-        destinationDialogueID: 18
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
+      - originConversationID: 6
+        originDialogueID: 17
+        destinationConversationID: 6
+        destinationDialogueID: 26
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -8342,8 +9588,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 451.54175
-        y: 547.7832
+        x: 451.85376
+        y: 824.04785
         width: 160
         height: 30
     - id: 18
@@ -8369,7 +9615,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Hoi hoi!
+        value: Nou, ik moet er weer vandoor. Zie je misschien straks weer!
         type: 0
         typeString: 
       - title: Sequence
@@ -8395,13 +9641,587 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 303.5498
-        y: 655.90186
+        x: 159.12503
+        y: 933.4823
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "H\xE9 Mark! Nog wat mooie vogels gespot van de week? \r"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 19
+        destinationConversationID: 6
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 314.44824
+        y: 78.62068
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Oh daar gaat ze!
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 5ffbc98b-5833-4a63-8511-f3da4596e292
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 20
+        destinationConversationID: 6
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 561.2954
+        y: 292.41376
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ik maak me alleen zorgen dat ze straks worden verdreven door die windmolens.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 21
+        destinationConversationID: 6
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 308.43832
+        y: 358.12805
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'De laatste die ze gaan bouwen staat praktisch in hun leefgebied. '
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 22
+        destinationConversationID: 6
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      - originConversationID: 6
+        originDialogueID: 22
+        destinationConversationID: 6
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 6
+        originDialogueID: 22
+        destinationConversationID: 6
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 308.43832
+        y: 408.12805
+        width: 160
+        height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Oh, dat klinkt heel bijzonder.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 23
+        destinationConversationID: 6
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 48.438522
+        y: 292.41376
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ik denk het wel.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 24
+        destinationConversationID: 6
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 403.16956
+        y: 877.9952
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hmmm... ik weet het niet.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 26
+        destinationConversationID: 6
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 584.7485
+        y: 875.36365
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hmm... nou, als jij het zegt.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 2bae32f0-41b9-48e2-a865-21c7452a10f8
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 27
+        destinationConversationID: 6
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 403.16956
+        y: 927.9952
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Je weet toch dat die mensen alleen maar vinkjes hoeven te zetten?
+          5 minuten met bewoners gepraat, hup. Die denken alleen maar aan geld, joh.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: d2b51079-2aa3-4845-ab43-dbb89905b65b
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 28
+        destinationConversationID: 6
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 584.7485
+        y: 925.36365
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Goed, ik ga nog even achter die buizerd aan. Zie je straks wel weer,
+          ja?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: e1fad860-dbc3-45f3-92ff-a3d546b57093
+        type: 0
+        typeString: 
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 479.1189
+        y: 1002.0457
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 36.986298}
-    canvasZoom: 0.7300002
+    canvasScrollPosition: {x: 26.597675, y: 306.85388}
+    canvasZoom: 0.8200001
   - id: 7
     fields:
     - title: Title
@@ -10034,7 +11854,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 471.7102
+        x: 473.026
         y: 555.1855
         width: 160
         height: 30
@@ -10087,7 +11907,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 688.3009
+        x: 689.6167
         y: 558.46136
         width: 160
         height: 30
@@ -10163,8 +11983,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Hey Guido! Jij bent precies diegene die ik zoek. Kan je dit pakketje
-          afleveren bij de windmolenbouwers? \r\n"
+        value: 
         type: 0
         typeString: 
       - title: Sequence
@@ -10186,13 +12005,7 @@ MonoBehaviour:
       - originConversationID: 8
         originDialogueID: 0
         destinationConversationID: 8
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      - originConversationID: 8
-        originDialogueID: 0
-        destinationConversationID: 8
-        destinationDialogueID: 2
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10202,7 +12015,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 457.95648
+        x: 456.6407
         y: 23.521744
         width: 160
         height: 30
@@ -10229,7 +12042,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Wat zit er in?
+        value: 'Hangt er van af. Wat zit er in?
 
 '
         type: 0
@@ -10314,8 +12127,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 697.81024
-        y: 170.59306
+        x: 700.3419
+        y: 174.39055
         width: 160
         height: 30
     - id: 3
@@ -10341,9 +12154,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Maak je maar geen zorgen, Guido. Hoe minder je weet hoe beter.
-
-'
+        value: Oh, gewoon iets om onze dank te tonen.
         type: 0
         typeString: 
       - title: Sequence
@@ -10368,6 +12179,12 @@ MonoBehaviour:
         originDialogueID: 3
         destinationConversationID: 8
         destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 8
+        originDialogueID: 3
+        destinationConversationID: 8
+        destinationDialogueID: 2
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10404,8 +12221,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Nou nee. Laten we zeggen dat dit pakketje discreet geleverd moet
-          worden.
+        value: 'Nou... nee.
 
 '
         type: 0
@@ -10425,13 +12241,7 @@ MonoBehaviour:
       - originConversationID: 8
         originDialogueID: 4
         destinationConversationID: 8
-        destinationDialogueID: 7
-        isConnector: 0
-        priority: 2
-      - originConversationID: 8
-        originDialogueID: 4
-        destinationConversationID: 8
-        destinationDialogueID: 8
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10498,8 +12308,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 337.90073
-        y: 280.93903
+        x: 341.74686
+        y: 369.40057
         width: 160
         height: 30
     - id: 6
@@ -10525,7 +12335,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Je hebt gelijk.\r Ik wil het niet weten.\n"
+        value: "Ok\xE9... niks gevaarlijks, toch?"
         type: 0
         typeString: 
       - title: Sequence
@@ -10543,7 +12353,7 @@ MonoBehaviour:
       - originConversationID: 8
         originDialogueID: 6
         destinationConversationID: 8
-        destinationDialogueID: 12
+        destinationDialogueID: 29
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10553,8 +12363,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 114.11365
-        y: 282.92612
+        x: 117.95978
+        y: 371.38766
         width: 160
         height: 30
     - id: 7
@@ -10580,9 +12390,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Ik kan discreet zijn, maar mag dit eigenlijk wel?
-
-'
+        value: Ik kan discreet zijn, maar ik wil niet in de problemen komen.
         type: 0
         typeString: 
       - title: Sequence
@@ -10610,8 +12418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 579.2388
-        y: 282.02167
+        x: 583.0849
+        y: 370.48322
         width: 160
         height: 30
     - id: 8
@@ -10667,8 +12475,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 823.5245
-        y: 282.0216
+        x: 829.7235
+        y: 479.8949
         width: 160
         height: 30
     - id: 9
@@ -10730,8 +12538,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 823.5245
-        y: 332.0216
+        x: 829.7235
+        y: 529.8949
         width: 160
         height: 30
     - id: 10
@@ -10791,8 +12599,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 580.33765
-        y: 332.02167
+        x: 585.3201
+        y: 419.34686
         width: 160
         height: 30
     - id: 11
@@ -10853,8 +12661,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 337.90073
-        y: 330.93903
+        x: 342.84576
+        y: 419.40057
         width: 160
         height: 30
     - id: 12
@@ -10880,9 +12688,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Precies! Dus wil je het pakketje voor me leveren?
-
-'
+        value: Dus, kan ik op je rekenen?
         type: 0
         typeString: 
       - title: Sequence
@@ -10916,8 +12722,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 110.26749
-        y: 331.00302
+        x: 115.29007
+        y: 480.641
         width: 160
         height: 30
     - id: 13
@@ -10971,8 +12777,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 706.1618
-        y: 480.09857
+        x: 698.0676
+        y: 808.8585
         width: 160
         height: 30
     - id: 14
@@ -11027,8 +12833,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 222.51617
-        y: 480.93896
+        x: 214.42201
+        y: 809.6989
         width: 160
         height: 30
     - id: 15
@@ -11091,8 +12897,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 706.1618
-        y: 530.0986
+        x: 698.0676
+        y: 858.8585
         width: 160
         height: 30
     - id: 16
@@ -11155,8 +12961,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 222.51617
-        y: 530.93896
+        x: 214.42201
+        y: 859.6989
         width: 160
         height: 30
     - id: 17
@@ -11212,8 +13018,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 216.74695
-        y: 652.0928
+        x: 208.65279
+        y: 980.8527
         width: 160
         height: 30
     - id: 18
@@ -11239,9 +13045,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Er moet een andere manier zijn om ze over te halen dan deze.
-
-'
+        value: Er moet een andere manier zijn om ze over te halen.
         type: 0
         typeString: 
       - title: Sequence
@@ -11269,8 +13073,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 704.2387
-        y: 645.4832
+        x: 696.14453
+        y: 974.24316
         width: 160
         height: 30
     - id: 19
@@ -11326,8 +13130,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460.00806
-        y: 651.2524
+        x: 451.91385
+        y: 980.0123
         width: 160
         height: 30
     - id: 20
@@ -11381,8 +13185,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 335.97766
-        y: 779.0158
+        x: 327.88345
+        y: 1107.7759
         width: 160
         height: 30
     - id: 21
@@ -11408,10 +13212,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Als je het weet geef me dan een bel? In de tussentijd ga ik door.
-          Met of zonder jou.
-
-'
+        value: Welke manier dan, Guido?
         type: 0
         typeString: 
       - title: Sequence
@@ -11429,7 +13230,7 @@ MonoBehaviour:
       - originConversationID: 8
         originDialogueID: 21
         destinationConversationID: 8
-        destinationDialogueID: 23
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -11439,8 +13240,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 700.3925
-        y: 782.0216
+        x: 692.29834
+        y: 1110.7815
         width: 160
         height: 30
     - id: 22
@@ -11492,11 +13293,66 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 338.83478
-        y: 867.5872
+        x: 330.74057
+        y: 1196.3472
         width: 160
         height: 30
-    - id: 23
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Ha, Guido. Jou heb ik n\xE9t nodig. Heb je even?"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 24
+        destinationConversationID: 8
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 459.27228
+        y: 73.52173
+        width: 160
+        height: 30
+    - id: 25
       fields:
       - title: Title
         value: 
@@ -11519,7 +13375,117 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: (vaar stilletjes weg)
+        value: Oh, vertel?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 25
+        destinationConversationID: 8
+        destinationDialogueID: 26
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 461.9038
+        y: 130.10068
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ik heb hier een pakketje dat ik wil schenken aan de windmolenbouwers.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 26
+        destinationConversationID: 8
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 461.9038
+        y: 180.10068
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Laten we zeggen dat het discreet moet gebeuren.
         type: 0
         typeString: 
       - title: Sequence
@@ -11527,7 +13493,304 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: EventGuid
-        value: ea69bc59-ed41-4bd4-a086-08fff017a7e3
+        value: bae7edf3-0026-48c7-a121-613eb98577b0
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 27
+        destinationConversationID: 8
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      - originConversationID: 8
+        originDialogueID: 27
+        destinationConversationID: 8
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 698.9092
+        y: 270.59308
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Zou jij het voor me kunnen bezorgen?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 28
+        destinationConversationID: 8
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 8
+        originDialogueID: 28
+        destinationConversationID: 8
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 463.04016
+        y: 230.10068
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Oh, nee hoor, maak je geen zorgen.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 29
+        destinationConversationID: 8
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 117.95978
+        y: 421.38766
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "We hebben het al z\xF3 vaak op een vriendelijke manier geprobeerd.
+          Niks werkt. Ik ben het zat!"
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: f18d7db9-2925-4ce6-a8ca-4cd5508b166c
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 30
+        destinationConversationID: 8
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 692.29834
+        y: 1160.7815
+        width: 160
+        height: 30
+    - id: 31
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: "Ik bezorg het pakketje zelf wel. Blijf jij maar na\xEFef geloven
+          dat er ook maar IETS zal gebeuren als we maar lang genoeg smeken en wachten."
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 9371ffe3-430f-4979-8f5d-a1ffac1ec21b
+        type: 0
+        typeString: 
+      conversationID: 8
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 8
+        originDialogueID: 31
+        destinationConversationID: 8
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 692.29834
+        y: 1210.7815
+        width: 160
+        height: 30
+    - id: 32
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ...
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 8
@@ -11545,13 +13808,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 700.3925
-        y: 872.0216
+        x: 692.29834
+        y: 1260.7815
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 90.1332, y: 71.4897}
-    canvasZoom: 0.9099999
+    canvasScrollPosition: {x: 0, y: 799.1896}
+    canvasZoom: 0.79
   syncInfo:
     syncActors: 0
     syncItems: 0

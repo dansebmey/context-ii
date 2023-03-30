@@ -8,10 +8,12 @@ public class Tourist : MonoBehaviour
 {
     public Sprite chathead;
     
-    private int initialTipValue;
+    private int initialHappiness;
+    private int maximumHappiness = 10;
     // This is the money you get when dropping the tourist off.
 
-    public int maxTipValue;
+    public int tipOnContent = 2;
+    public int tipOnVeryHappy = 5;
     // Could be visually implicated by how wealthy the tourist looks.
     
     private const int SUPER_PASSIONATE = +2;
@@ -19,10 +21,11 @@ public class Tourist : MonoBehaviour
     private const int NEUTRAL = 0;
     private const int DESPICABLE = -1;
 
-    private const int SUIT_HEARTS = 0;
-    private const int SUIT_BULBS = 1;
-    private const int SUIT_FISTS = 2;
-    private const int SUIT_CLOUDS = 3;
+    public const int SUIT_HEARTS = 0;
+    public const int SUIT_BULBS = 1;
+    public const int SUIT_FISTS = 2;
+    public const int SUIT_CLOUDS = 3;
+    private int lastSuitConst = -1;
 
     [Range(-1, +1)] public int heartLevel;
     [Range(-1, +1)] public int brainLevel;
@@ -31,11 +34,13 @@ public class Tourist : MonoBehaviour
     private Vector4 suitAffinities;
     
     // Realtime variables
-    private int currentTipValue;
-    private int tipMultiplier = 1;
-    private int lastTipIncrease;
-    public LocalTipHUD localTipHUD;
+    private int currentHappiness;
+    private int happinessBonus = 1;
+    private int lastEffectOnHappiness;
     private TouristPortrait portrait;
+    
+    private float veryHappyThreshold = 8;
+    private float contentThreshold = 5;
 
     private void Awake()
     {
@@ -44,10 +49,8 @@ public class Tourist : MonoBehaviour
 
     private void Start()
     {
-        initialTipValue = Random.Range(2, 6);
-        
-        // initialTipValue = 4;
-        currentTipValue = initialTipValue;
+        initialHappiness = Random.Range(2, 6);
+        currentHappiness = initialHappiness;
 
         suitAffinities.x = heartLevel;
         suitAffinities.y = brainLevel;
@@ -62,95 +65,104 @@ public class Tourist : MonoBehaviour
 
     private void OnSuitPlayed(int suitConst)
     {
-        int tipIncrease = 0;
+        if (!this) return;
         
         switch (suitConst)
         {
             case SUIT_HEARTS:
                 if ((int)suitAffinities.x != 0)
                 {
-                    tipIncrease = (int)suitAffinities.x;
-                    currentTipValue += tipIncrease;
+                    AffectHappiness((int)suitAffinities.x + DetermineHappinessBonus(SUIT_HEARTS, suitAffinities.x));
+                    lastSuitConst = SUIT_HEARTS;
                     
-                    portrait.AddHeart(suitAffinities.x, DetermineHappiness());
+                    portrait.AddSuit(SUIT_HEARTS, currentHappiness);
                 }
                 break;
             case SUIT_BULBS:
                 if ((int)suitAffinities.y != 0)
                 {
-                    tipIncrease = (int)suitAffinities.y;
-                    currentTipValue += tipIncrease;
+                    AffectHappiness((int)suitAffinities.y + DetermineHappinessBonus(SUIT_BULBS, suitAffinities.y));
+                    lastSuitConst = SUIT_BULBS;
                     
-                    portrait.AddBulb(suitAffinities.y, DetermineHappiness());
+                    portrait.AddSuit(SUIT_BULBS, currentHappiness);
                 }
                 break;
             case SUIT_FISTS:
                 if ((int)suitAffinities.z != 0)
                 {
-                    tipIncrease = (int)suitAffinities.z;
-                    currentTipValue += tipIncrease;
+                    AffectHappiness((int)suitAffinities.z + DetermineHappinessBonus(SUIT_FISTS, suitAffinities.z));
+                    lastSuitConst = SUIT_FISTS;
                     
-                    portrait.AddFist(suitAffinities.z, DetermineHappiness());
+                    portrait.AddSuit(SUIT_FISTS, currentHappiness);
                 }
                 break;
             case SUIT_CLOUDS:
                 if ((int)suitAffinities.w != 0)
                 {
-                    tipIncrease = (int)suitAffinities.w;
-                    currentTipValue += tipIncrease;
+                    AffectHappiness((int)suitAffinities.w + DetermineHappinessBonus(SUIT_CLOUDS, suitAffinities.w));
+                    lastSuitConst = SUIT_CLOUDS;
                     
-                    portrait.AddCloud(DetermineHappiness());
+                    portrait.AddSuit(SUIT_CLOUDS, currentHappiness);
                 }
                 break;
         }
 
-        if ((tipIncrease > 0 && lastTipIncrease > 0) || (tipIncrease < 0 && lastTipIncrease < 0))
-        {
-            tipMultiplier += 1;
-        }
-        else if (tipIncrease < 0 || tipIncrease > 0)
-        {
-            tipMultiplier = 1;
-        }
+        string colourHex;
+        if (currentHappiness > veryHappyThreshold) colourHex = "#47A254";
+        else if (currentHappiness > contentThreshold) colourHex = "#FFFFFF";
+        else colourHex = "#E65553";
+        
+        portrait.satisfactionUI.SetPendingTip(DetermineTip(currentHappiness), colourHex);
 
-        lastTipIncrease = tipIncrease;
+    }
+    
+    private void AffectHappiness(int effectOnHappiness)
+    {
+        currentHappiness += effectOnHappiness;
+        lastEffectOnHappiness = effectOnHappiness;
+        
+        if (currentHappiness < 0) currentHappiness = 0;
+        else if (currentHappiness > maximumHappiness) currentHappiness = maximumHappiness;
     }
 
-    private float DetermineHappiness()
+    private int DetermineHappinessBonus(int suitConst, float happinessFromSuit)
     {
-        return (1.0f / maxTipValue) * currentTipValue;
+        if (suitConst == lastSuitConst && happinessFromSuit > 0 && lastEffectOnHappiness > 0)
+        {
+            if (happinessBonus < 0) happinessBonus = 0;
+            return happinessBonus += 1;
+        }
+
+        if (suitConst == lastSuitConst && happinessFromSuit < 0 && lastEffectOnHappiness < 0)
+        {
+            if (happinessBonus > 0) happinessBonus = 0;
+            return happinessBonus -= 1;
+        }
+        
+        happinessBonus = 0;
+        return happinessBonus;
     }
 
-    private void HandleTipBonus(CardData cardData)
+    private int DetermineTip(int happiness)
     {
-        int tipBonus = (int)Vector4.Dot(cardData.GetSuitValues(), suitAffinities);
-        currentTipValue += tipBonus;
-        Debug.Log("Tourist [" + gameObject.name + "] gave a tip bonus of [" + tipBonus + "] based on the card [" + cardData.GetSuitValues() + "]");
-        
-        if ((tipBonus > 0 && lastTipIncrease > 0) || (tipBonus < 0 && lastTipIncrease < 0))
-        {
-            tipMultiplier += 1;
-        }
-        else if (tipBonus < 0 || tipBonus > 0)
-        {
-            tipMultiplier = 1;
-        }
-        
-        lastTipIncrease = tipBonus;
-        localTipHUD.AddToFavour(tipBonus);
+        if (happiness >= veryHappyThreshold) return tipOnVeryHappy;
+        if (happiness >= contentThreshold) return tipOnContent;
+        return 0;
+    }
+
+    private float GetHappinessAsFloat(int happiness)
+    {
+        return 0.1f * happiness;
     }
 
     public int GetTipFromCheckout()
     {
-        int finalTip = Math.Clamp(currentTipValue * tipMultiplier, 0, maxTipValue);
-        Debug.Log("Tourist [" + gameObject.name + "] gave a total tip of [" + finalTip + "]");
-        
-        return finalTip;
+        return DetermineTip(currentHappiness);
     }
 
     public void SetPortrait(TouristPortrait touristPortrait)
     {
         portrait = touristPortrait;
-        portrait.satisfactionUI.UpdateHappinessMeter(DetermineHappiness());
+        portrait.satisfactionUI.UpdateHappinessMeter(currentHappiness);
     }
 }

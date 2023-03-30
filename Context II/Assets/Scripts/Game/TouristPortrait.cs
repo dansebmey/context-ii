@@ -14,12 +14,8 @@ public class TouristPortrait : MonoBehaviour
     public Sprite placeholderIcon;
     
     private Image chatheadImage;
-    // private readonly List<Image> responseIcons = new List<Image>();
     private EmotionSpritePopup emotionSpritePopup;
     [HideInInspector] public SatisfactionUI satisfactionUI;
-    // public Transform chatHeadTx;
-
-    private int suitsAdded = 0;
     
     private void Awake()
     {
@@ -52,51 +48,17 @@ public class TouristPortrait : MonoBehaviour
         // chatHead
     }
 
-    public void AddHeart(float suitFavourability, float touristHappiness)
+    public void AddSuit(int suitConst, int touristHappiness)
     {
-        suitsAdded++;
-        // responseIcons[suitsAdded].sprite = heartIcon;
-        
-        // if (suitFavourability > 0) emotionSpritePopup.Show(heartIcon);
-        // else
-        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
-        
-        satisfactionUI.UpdateUI(heartIcon, touristHappiness);
-    }
-    
-    public void AddBulb(float suitFavourability, float touristHappiness)
-    {
-        suitsAdded++;
-        // responseIcons[suitsAdded].sprite = bulbIcon;
-        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
-        
-        satisfactionUI.UpdateUI(bulbIcon, touristHappiness);
-    }
+        var sprite = suitConst switch
+        {
+            Tourist.SUIT_HEARTS => heartIcon,
+            Tourist.SUIT_BULBS => bulbIcon,
+            Tourist.SUIT_FISTS => fistIcon,
+            Tourist.SUIT_CLOUDS => cloudIcon,
+            _ => placeholderIcon
+        };
 
-    public void AddFist(float suitFavourability, float touristHappiness)
-    {
-        suitsAdded++;
-        // responseIcons[suitsAdded].sprite = fistIcon;
-        // if (suitFavourability < 0) emotionSpritePopup.Show(cloudIcon);
-        
-        satisfactionUI.UpdateUI(fistIcon, touristHappiness);
-    }
-
-    public void AddCloud(float touristHappiness)
-    {
-        suitsAdded++;
-        // responseIcons[suitsAdded].sprite = cloudIcon;
-        // emotionSpritePopup.Show(cloudIcon);
-        
-        satisfactionUI.UpdateUI(cloudIcon, touristHappiness);
-    }
-
-    public void ResetIcons()
-    {
-        suitsAdded = 0;
-        // foreach (Image icon in responseIcons)
-        // {
-        //     icon.sprite = placeholderIcon;
-        // }
+        satisfactionUI.UpdateUI(sprite, touristHappiness);
     }
 }

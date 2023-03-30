@@ -10,7 +10,8 @@ public enum EventType
     OnBoatStopped,
     ChangeCameraPerspective,
     OnSuitPlayed,
-    OnAllSuitsPlayed
+    OnAllSuitsPlayed,
+    OnPrepareTeleport
 }
 
 public static class EventManager

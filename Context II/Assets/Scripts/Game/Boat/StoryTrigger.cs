@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoryTrigger : StoppingPoint
+public class StoryTrigger : Trigger
 {
     private Boat boat;
     
@@ -29,7 +29,7 @@ public class StoryTrigger : StoppingPoint
 
     private void ResumeTrip()
     {
-        boat.StartSpeedingUp(this);
+        boat.StartSpeedingUp();
     }
 
     private void OnDestroy()

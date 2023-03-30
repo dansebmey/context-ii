@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Pier : StoppingPoint
+public class Pier : Trigger
 {
     private List<Tourist> embarkingTourists;
     public Transform disembarkedCrowdCentre;
@@ -30,6 +30,6 @@ public class Pier : StoppingPoint
     public override void OnBoatArrived(Boat boat)
     {
         boat.OnPierReached(this);
-        boat.StartSpeedingUp(this);
+        boat.StartSpeedingUp();
     }
 }

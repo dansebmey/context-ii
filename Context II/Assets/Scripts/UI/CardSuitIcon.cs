@@ -12,7 +12,7 @@ public class CardSuitIcon : MonoBehaviour
 
     protected virtual void Awake()
     {
-        image = GetComponent<Image>();
+        image = GetComponentInChildren<Image>();
         animator = GetComponent<Animator>();
         newCardUI = GetComponentInParent<NewCardUI>();
     }

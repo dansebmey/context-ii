@@ -3,21 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class StoppingPoint : MonoBehaviour
+public abstract class Trigger : MonoBehaviour
 {
+    public bool boatSlowsDown = true;
+    
     protected virtual void Start()
     {
         
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         Boat boat = other.GetComponent<Boat>();
         if (boat)
         {
-            boat.StartSlowingDown(this);
+            if (boatSlowsDown) boat.StartSlowingDown(this);
+            else OnBoatArrived(boat);
         }
     }
-
+    
     public abstract void OnBoatArrived(Boat boat);
 }

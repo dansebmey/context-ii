@@ -40,6 +40,7 @@ public class TouristStoryManager : MonoBehaviour
         AddStoryToDeck(new CardData("Koopkracht Nederlanders nog steeds stabiel, volgens experts.", 0, +1, 0, 0));
         AddStoryToDeck(new CardData("Klimaatbureau van de VN presenteert alarmerend rapport.", 0, 0, +1, 0));
         AddStoryToDeck(new CardData("Shell investeert vooralsnog flink in fossiele brandstoffen.", 0, 0, +1, 0));
+        AddStoryToDeck(new CardData("(vaar in stilte verder)", 0, 0, 0, 0));
         // AddStoryToDeck(new CardData("Iets controversieels", 0, 0, +1, +1));
     }
 

@@ -20,7 +20,8 @@ public class Boat : MonoBehaviour
     
     private List<Tourist> touristsOnBoard;
     private readonly List<Pier> passedPiers = new List<Pier>();
-    
+    public bool isMoving = true;
+
     private void Awake()
     {
         camCtrl = FindObjectOfType<CameraController>();
@@ -66,6 +67,8 @@ public class Boat : MonoBehaviour
     
     private void FixedUpdateMoving()
     {
+        if (!isMoving) return;
+        
         transform.position += new Vector3(0, 0, travelSpeed);
     }
 
@@ -154,12 +157,12 @@ public class Boat : MonoBehaviour
         touristsOnBoard.Clear();
     }
 
-    public void StartSlowingDown(StoppingPoint stoppingPoint)
+    public void StartSlowingDown(Trigger trigger)
     {
-        StartCoroutine(SlowDown(stoppingPoint));
+        StartCoroutine(SlowDown(trigger));
     }
 
-    private IEnumerator SlowDown(StoppingPoint stoppingPoint)
+    private IEnumerator SlowDown(Trigger trigger)
     {
         while (travelSpeed > 0)
         {
@@ -168,15 +171,15 @@ public class Boat : MonoBehaviour
         }
 
         travelSpeed = 0;
-        stoppingPoint.OnBoatArrived(this);
+        trigger.OnBoatArrived(this);
     }
 
-    public void StartSpeedingUp(StoppingPoint stoppingPoint)
+    public void StartSpeedingUp()
     {
-        StartCoroutine(SpeedUp(stoppingPoint));
+        StartCoroutine(SpeedUp());
     }
 
-    private IEnumerator SpeedUp(StoppingPoint stoppingPoint)
+    private IEnumerator SpeedUp()
     {
         while (travelSpeed < initTravelSpeed)
         {
@@ -190,5 +193,11 @@ public class Boat : MonoBehaviour
     public CameraController GetCameraController()
     {
         return camCtrl;
+    }
+
+    public void Teleport(Transform destinationTx)
+    {
+        Vector3 pos = transform.position;
+        transform.position = new Vector3(pos.x, pos.y, destinationTx.position.z);
     }
 }
